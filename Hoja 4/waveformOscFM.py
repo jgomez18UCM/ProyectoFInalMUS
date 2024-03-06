@@ -8,7 +8,7 @@ from oscFM import *
 
 class WaveformOscFM(OscFM):
     def __init__(self,fc=110.0,amp=1.0,fm=6.0, beta=1.0, carrier="Sine", mod="Sine"):
-        OscFM(fc,amp,fm,beta)
+        OscFM.__init__(self,fc,amp,fm,beta)
         # moduladora = βsin(2πfm)
         self.carrier = carrier
         self.mod = WaveformOsc(freq=fm,amp=beta,waveform=mod)
