@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MasterTagFolder" id="{216234a1-188b-425c-b421-59de32f2467b}">
+		<property name="name">
+			<value>Master</value>
+		</property>
+		<relationship name="items">
+			<destination>{069c6865-2f3f-46c5-90c3-ed0216243edb}</destination>
+			<destination>{d82d5858-06a4-4f1f-8b87-d98c97fd4823}</destination>
+			<destination>{e543e055-0407-4994-bcc4-3026ce3bed94}</destination>
+			<destination>{d16dba1e-a2b8-4ced-a05e-bc323d7a8885}</destination>
+		</relationship>
+	</object>
+	<object class="Tag" id="{069c6865-2f3f-46c5-90c3-ed0216243edb}">
+		<property name="name">
+			<value>placeholder</value>
+		</property>
+	</object>
+	<object class="Tag" id="{d82d5858-06a4-4f1f-8b87-d98c97fd4823}">
+		<property name="name">
+			<value>placeholder</value>
+		</property>
+	</object>
+	<object class="Tag" id="{e543e055-0407-4994-bcc4-3026ce3bed94}">
+		<property name="name">
+			<value>placeholder</value>
+		</property>
+	</object>
+	<object class="Tag" id="{d16dba1e-a2b8-4ced-a05e-bc323d7a8885}">
+		<property name="name">
+			<value>placeholder</value>
+		</property>
+	</object>
+</objects>

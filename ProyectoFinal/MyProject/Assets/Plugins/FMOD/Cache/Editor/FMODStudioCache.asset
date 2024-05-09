@@ -1,0 +1,2230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9067025752017581196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank A.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank A.assets.bank
+  Name: Bank A.assets
+  StudioPath: bank:/Queen/Bank A.assets
+  lastModified: 638508643972302446
+  FileSizes:
+  - Name: Desktop
+    Value: 1621536
+  Exists: 1
+--- !u!114 &-8297453688405801839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Jazz_Guitar
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Jazz_Guitar
+  Guid:
+    Data1: -1884801878
+    Data2: 1149777638
+    Data3: -866449747
+    Data4: 2081538009
+  Banks:
+  - {fileID: -5536419862721710511}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138604
+--- !u!114 &-8081348557634010438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FullTracks/Bamboleo
+  m_EditorClassIdentifier: 
+  Path: event:/FullTracks/Bamboleo
+  Guid:
+    Data1: 1349623604
+    Data2: 1292401464
+    Data3: -1353643075
+    Data4: -1362797528
+  Banks:
+  - {fileID: 7498288023045540898}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3779911953024959018}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38799
+--- !u!114 &-8071615709113186093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Guitar.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Guitar.bank
+  Name: Guitar
+  StudioPath: bank:/Bamboleo/Guitar
+  lastModified: 638508625244416523
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &-7619734835102680978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Piano.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Piano.bank
+  Name: Piano
+  StudioPath: bank:/Bamboleo/Piano
+  lastModified: 638508625245542003
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &-7432913968018722009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Piano.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Piano.bank
+  Name: Piano
+  StudioPath: bank:/Bamboleo/Piano
+  lastModified: 638508625245542003
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &-7083193461555712381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Accordion.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Accordion.assets.bank
+  Name: Accordion.assets
+  StudioPath: bank:/Bamboleo/Accordion.assets
+  lastModified: 638508625242992684
+  FileSizes:
+  - Name: Desktop
+    Value: 710144
+  Exists: 1
+--- !u!114 &-6857473938163774200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Clarinet.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Clarinet.bank
+  Name: Clarinet
+  StudioPath: bank:/Bamboleo/Clarinet
+  lastModified: 638508625243789279
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &-6736519802206327386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Room1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Room1
+  Guid:
+    Data1: 916306525
+    Data2: 1119418358
+    Data3: 207854230
+    Data4: 970112738
+  Banks:
+  - {fileID: 3678407560616636145}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &-6050676106304618258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Piano
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Piano
+  Guid:
+    Data1: 240563603
+    Data2: 1322412689
+    Data3: -2002178626
+    Data4: -1416887994
+  Banks:
+  - {fileID: -7619734835102680978}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138604
+--- !u!114 &-5940071807881996751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Clarinet.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Clarinet.bank
+  Name: Clarinet
+  StudioPath: bank:/Bamboleo/Clarinet
+  lastModified: 638508625243789279
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &-5806126372483823354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  Guid:
+    Data1: -446978603
+    Data2: 1140869292
+    Data3: 1469820830
+    Data4: 1997313728
+  Banks:
+  - {fileID: 5899247443030914015}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 598291802945165223}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 171786
+--- !u!114 &-5679088519428757467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/AcousticGuitar1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/AcousticGuitar1
+  Guid:
+    Data1: 1578233992
+    Data2: 1136900265
+    Data3: -26230610
+    Data4: 1475046462
+  Banks:
+  - {fileID: 1007447075321394728}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &-5536419862721710511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Jazz_Guitar.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Jazz_Guitar.bank
+  Name: Jazz_Guitar
+  StudioPath: bank:/Bamboleo/Jazz_Guitar
+  lastModified: 638508625245044018
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &-5536401913769951160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank B.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank B.bank
+  Name: Bank B
+  StudioPath: bank:/Queen/Bank B
+  lastModified: 638508643972474622
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &-5370376728877794181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/BackingVocals2
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/BackingVocals2
+  Guid:
+    Data1: 896538294
+    Data2: 1098733358
+    Data3: -650206050
+    Data4: -641431153
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &-4534463553655235939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Bass
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Bass
+  Guid:
+    Data1: -29435032
+    Data2: 1204763520
+    Data3: -2094070643
+    Data4: -1856095515
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &-4430451526204347501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Jazz_Guitar.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Jazz_Guitar.assets.bank
+  Name: Jazz_Guitar.assets
+  StudioPath: bank:/Bamboleo/Jazz_Guitar.assets
+  lastModified: 638508625245416633
+  FileSizes:
+  - Name: Desktop
+    Value: 595328
+  Exists: 1
+--- !u!114 &-4045079308146600360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Master.assets.bank
+  Name: Master.assets
+  StudioPath: bank:/Master.assets
+  lastModified: 638508633190483237
+  FileSizes:
+  - Name: Desktop
+    Value: 20765088
+  Exists: 1
+--- !u!114 &-3902102849671221409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Bass
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Bass
+  Guid:
+    Data1: -29435032
+    Data2: 1204763520
+    Data3: -2094070643
+    Data4: -1856095515
+  Banks:
+  - {fileID: -5536401913769951160}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &-3863488002159166997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Keys1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Keys1
+  Guid:
+    Data1: -1581884457
+    Data2: 1248157085
+    Data3: -1216931701
+    Data4: -1068404429
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &-3855861841193365162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Guitar
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Guitar
+  Guid:
+    Data1: 354568016
+    Data2: 1201247984
+    Data3: -2102302578
+    Data4: 1187906382
+  Banks:
+  - {fileID: -8071615709113186093}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138604
+--- !u!114 &-3779911953024959018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bamboleo/Volumen
+  m_EditorClassIdentifier: 
+  Name: Volumen
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2682423192
+    data2: 2592034594
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-3456220796952039578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Soft_Sax
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Soft_Sax
+  Guid:
+    Data1: 579313539
+    Data2: 1191887256
+    Data3: -921771356
+    Data4: 1977290090
+  Banks:
+  - {fileID: 2756419707294492967}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138604
+--- !u!114 &-3392670945988973686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WasabiMode
+  m_EditorClassIdentifier: 
+  Name: WasabiMode
+  StudioPath: parameter:/WasabiMode
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2893108898
+    data2: 1321086740
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - WasabiOff
+  - WasabiOn
+  Exists: 1
+--- !u!114 &-3363738452273660055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Jazz_Guitar.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Jazz_Guitar.assets.bank
+  Name: Jazz_Guitar.assets
+  StudioPath: bank:/Bamboleo/Jazz_Guitar.assets
+  lastModified: 638508625245416633
+  FileSizes:
+  - Name: Desktop
+    Value: 595328
+  Exists: 1
+--- !u!114 &-3039736020748321775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Snare1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Snare1
+  Guid:
+    Data1: -1531945940
+    Data2: 1300198557
+    Data3: 354995106
+    Data4: -806167854
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &-2753462798253675655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Base.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Base.assets.bank
+  Name: Base.assets
+  StudioPath: bank:/Bamboleo/Base.assets
+  lastModified: 638508625243633455
+  FileSizes:
+  - Name: Desktop
+    Value: 1910272
+  Exists: 1
+--- !u!114 &-2518734652059102836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Piano.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Piano.assets.bank
+  Name: Piano.assets
+  StudioPath: bank:/Bamboleo/Piano.assets
+  lastModified: 638508625245811324
+  FileSizes:
+  - Name: Desktop
+    Value: 608544
+  Exists: 1
+--- !u!114 &-2499306120662323775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Clarinet.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Clarinet.assets.bank
+  Name: Clarinet.assets
+  StudioPath: bank:/Bamboleo/Clarinet.assets
+  lastModified: 638508625244270508
+  FileSizes:
+  - Name: Desktop
+    Value: 620608
+  Exists: 1
+--- !u!114 &-2433252336335327018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Piano.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Piano.assets.bank
+  Name: Piano.assets
+  StudioPath: bank:/Bamboleo/Piano.assets
+  lastModified: 638508625245811324
+  FileSizes:
+  - Name: Desktop
+    Value: 608544
+  Exists: 1
+--- !u!114 &-2360833476313615030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Soft_Sax
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Soft_Sax
+  Guid:
+    Data1: 579313539
+    Data2: 1191887256
+    Data3: -921771356
+    Data4: 1977290090
+  Banks:
+  - {fileID: 3589661649683859663}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138604
+--- !u!114 &-2346121170126093555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Jazz_Guitar.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Jazz_Guitar.bank
+  Name: Jazz_Guitar
+  StudioPath: bank:/Bamboleo/Jazz_Guitar
+  lastModified: 638508625245044018
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &-2204014677543570488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../Hit the Road Jack FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638508438976295581
+  FileSizes:
+  - Name: Desktop
+    Value: 860
+  Exists: 1
+--- !u!114 &-2038765778594223202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Base
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Base
+  Guid:
+    Data1: 2042954313
+    Data2: 1269305298
+    Data3: 1677343636
+    Data4: -1876095415
+  Banks:
+  - {fileID: 71649529432319220}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138000
+--- !u!114 &-1620449008448839717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Keys2
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Keys2
+  Guid:
+    Data1: -1235642144
+    Data2: 1084684309
+    Data3: -1772482140
+    Data4: -453375442
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &-1439375480188579535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../Hit the Road Jack FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638508438975766781
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &-1096019002482756663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Vocals1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Vocals1
+  Guid:
+    Data1: 410934396
+    Data2: 1225181910
+    Data3: 1084841616
+    Data4: -2104047904
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &-959367858327549828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Guitar.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Guitar.assets.bank
+  Name: Guitar.assets
+  StudioPath: bank:/Bamboleo/Guitar.assets
+  lastModified: 638508625244928711
+  FileSizes:
+  - Name: Desktop
+    Value: 858368
+  Exists: 1
+--- !u!114 &-429575887173251047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank B.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank B.assets.bank
+  Name: Bank B.assets
+  StudioPath: bank:/Queen/Bank B.assets
+  lastModified: 638508643972902787
+  FileSizes:
+  - Name: Desktop
+    Value: 1483296
+  Exists: 1
+--- !u!114 &-31458232751592178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Piano
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Piano
+  Guid:
+    Data1: 240563603
+    Data2: 1322412689
+    Data3: -2002178626
+    Data4: -1416887994
+  Banks:
+  - {fileID: -7432913968018722009}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138604
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 836779227010602656}
+  - {fileID: 2722120141542182776}
+  - {fileID: 5780656209723820677}
+  - {fileID: 7073209531241585926}
+  - {fileID: 7498288023045540898}
+  - {fileID: -2753462798253675655}
+  - {fileID: 71649529432319220}
+  - {fileID: -2499306120662323775}
+  - {fileID: -6857473938163774200}
+  - {fileID: 8630473387134906486}
+  - {fileID: -8071615709113186093}
+  - {fileID: -4430451526204347501}
+  - {fileID: -2346121170126093555}
+  - {fileID: -2433252336335327018}
+  - {fileID: -7619734835102680978}
+  - {fileID: 5005259732709212274}
+  - {fileID: 3589661649683859663}
+  - {fileID: -9067025752017581196}
+  - {fileID: 1007447075321394728}
+  - {fileID: -429575887173251047}
+  - {fileID: -5536401913769951160}
+  - {fileID: 702200243288966356}
+  - {fileID: 3678407560616636145}
+  - {fileID: 5620912600335793804}
+  - {fileID: 7945548532695094877}
+  EditorEvents:
+  - {fileID: 642748401288917472}
+  - {fileID: -8081348557634010438}
+  - {fileID: -2038765778594223202}
+  - {fileID: 9014179140990387528}
+  - {fileID: -3855861841193365162}
+  - {fileID: 5286367546986073305}
+  - {fileID: -6050676106304618258}
+  - {fileID: -6736519802206327386}
+  - {fileID: -3902102849671221409}
+  - {fileID: 6709145176630888245}
+  - {fileID: -5679088519428757467}
+  - {fileID: -2360833476313615030}
+  EditorParameters:
+  - {fileID: -3392670945988973686}
+  - {fileID: 2795877709736717952}
+  MasterBanks:
+  - {fileID: 7498288023045540898}
+  StringsBanks:
+  - {fileID: 836779227010602656}
+  cacheTime: 638508643974124131
+  cacheVersion: 131616
+--- !u!114 &32991488064898138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Accordion
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Accordion
+  Guid:
+    Data1: 1287385524
+    Data2: 1208967979
+    Data3: -1455303290
+    Data4: -441322676
+  Banks:
+  - {fileID: 6059697020161797686}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138658
+--- !u!114 &71649529432319220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Base.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Base.bank
+  Name: Base
+  StudioPath: bank:/Bamboleo/Base
+  lastModified: 638508625243135868
+  FileSizes:
+  - Name: Desktop
+    Value: 1762
+  Exists: 1
+--- !u!114 &480478868156060708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/LeadGuitar1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/LeadGuitar1
+  Guid:
+    Data1: 589995693
+    Data2: 1198715477
+    Data3: -370101628
+    Data4: -2135498755
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &598291802945165223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/Song combo
+  m_EditorClassIdentifier: 
+  Name: Song combo
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 2682423192
+    data2: 2592034594
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &642748401288917472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Accordion
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Accordion
+  Guid:
+    Data1: 1287385524
+    Data2: 1208967979
+    Data3: -1455303290
+    Data4: -441322676
+  Banks:
+  - {fileID: 5780656209723820677}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138658
+--- !u!114 &702200243288966356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank C.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank C.assets.bank
+  Name: Bank C.assets
+  StudioPath: bank:/Queen/Bank C.assets
+  lastModified: 638508643973583057
+  FileSizes:
+  - Name: Desktop
+    Value: 2020128
+  Exists: 1
+--- !u!114 &733568926109193054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Snare2
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Snare2
+  Guid:
+    Data1: 1514501398
+    Data2: 1339589705
+    Data3: 269460626
+    Data4: -410781938
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &836779227010602656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bamboleo.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bamboleo.strings.bank
+  Name: Bamboleo.strings
+  StudioPath: bank:/FullTracks/Bamboleo.strings
+  lastModified: 638508643971643688
+  FileSizes:
+  - Name: Desktop
+    Value: 2398
+  Exists: 1
+--- !u!114 &912033140130443167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/AcousticGuitar2
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/AcousticGuitar2
+  Guid:
+    Data1: 1366813404
+    Data2: 1136886356
+    Data3: 103582607
+    Data4: -17954895
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &1007447075321394728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank A.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank A.bank
+  Name: Bank A
+  StudioPath: bank:/Queen/Bank A
+  lastModified: 638508643971807452
+  FileSizes:
+  - Name: Desktop
+    Value: 1442
+  Exists: 1
+--- !u!114 &1086667880308868119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/AcousticGuitar
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/AcousticGuitar
+  Guid:
+    Data1: -239292140
+    Data2: 1301946781
+    Data3: -815508315
+    Data4: 292183130
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1453511317955194368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Vocals2
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Vocals2
+  Guid:
+    Data1: 611045077
+    Data2: 1218535713
+    Data3: 1592825762
+    Data4: 1797058848
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &1768957710487260205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Volumen
+  m_EditorClassIdentifier: 
+  Name: Volumen
+  StudioPath: parameter:/Volumen
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2682423192
+    data2: 2592034594
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &1812463369273655440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Base.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Base.assets.bank
+  Name: Base.assets
+  StudioPath: bank:/Bamboleo/Base.assets
+  lastModified: 638508625243633455
+  FileSizes:
+  - Name: Desktop
+    Value: 1910272
+  Exists: 1
+--- !u!114 &1913540035757567177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Room1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Room1
+  Guid:
+    Data1: 916306525
+    Data2: 1119418358
+    Data3: 207854230
+    Data4: 970112738
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &2051480120653240185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FullTracks/Bamboleo
+  m_EditorClassIdentifier: 
+  Path: event:/FullTracks/Bamboleo
+  Guid:
+    Data1: 1349623604
+    Data2: 1292401464
+    Data3: -1353643075
+    Data4: -1362797528
+  Banks:
+  - {fileID: 4048931108569757402}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8612049590745066918}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38799
+--- !u!114 &2377546114600116917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Guitar.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Guitar.bank
+  Name: Guitar
+  StudioPath: bank:/Bamboleo/Guitar
+  lastModified: 638508625244416523
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &2722120141542182776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Accordion.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Accordion.assets.bank
+  Name: Accordion.assets
+  StudioPath: bank:/Bamboleo/Accordion.assets
+  lastModified: 638508625242992684
+  FileSizes:
+  - Name: Desktop
+    Value: 710144
+  Exists: 1
+--- !u!114 &2756419707294492967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Soft_Sax.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Soft_Sax.bank
+  Name: Soft_Sax
+  StudioPath: bank:/Bamboleo/Soft_Sax
+  lastModified: 638508625245934704
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &2795877709736717952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Volumen
+  m_EditorClassIdentifier: 
+  Name: Volumen
+  StudioPath: parameter:/Volumen
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2682423192
+    data2: 2592034594
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3095078030416056582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Clarinet.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Clarinet.assets.bank
+  Name: Clarinet.assets
+  StudioPath: bank:/Bamboleo/Clarinet.assets
+  lastModified: 638508625244270508
+  FileSizes:
+  - Name: Desktop
+    Value: 620608
+  Exists: 1
+--- !u!114 &3139315459992490623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Base
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Base
+  Guid:
+    Data1: 2042954313
+    Data2: 1269305298
+    Data3: 1677343636
+    Data4: -1876095415
+  Banks:
+  - {fileID: 3528872990916321055}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138000
+--- !u!114 &3332019559795595331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638508633187358694
+  FileSizes:
+  - Name: Desktop
+    Value: 20854
+  Exists: 1
+--- !u!114 &3528872990916321055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Base.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Base.bank
+  Name: Base
+  StudioPath: bank:/Bamboleo/Base
+  lastModified: 638508625243135868
+  FileSizes:
+  - Name: Desktop
+    Value: 1762
+  Exists: 1
+--- !u!114 &3541282334487138019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Room2
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Room2
+  Guid:
+    Data1: 98686895
+    Data2: 1249631934
+    Data3: 1022498440
+    Data4: 242787052
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &3589661649683859663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Soft_Sax.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Soft_Sax.bank
+  Name: Soft_Sax
+  StudioPath: bank:/Bamboleo/Soft_Sax
+  lastModified: 638508625245934704
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &3678407560616636145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank C.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank C.bank
+  Name: Bank C
+  StudioPath: bank:/Queen/Bank C
+  lastModified: 638508643973091438
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &4048931108569757402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bamboleo.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bamboleo.bank
+  Name: Bamboleo
+  StudioPath: bank:/FullTracks/Bamboleo
+  lastModified: 638508625246353684
+  FileSizes:
+  - Name: Desktop
+    Value: 2240
+  Exists: 1
+--- !u!114 &4175683519179344731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Vocals
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Vocals
+  Guid:
+    Data1: -1442472457
+    Data2: 1225244956
+    Data3: 1377266078
+    Data4: 655868484
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5002906218602469229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WasabiMode
+  m_EditorClassIdentifier: 
+  Name: WasabiMode
+  StudioPath: parameter:/WasabiMode
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2893108898
+    data2: 1321086740
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - WasabiOff
+  - WasabiOn
+  Exists: 1
+--- !u!114 &5005259732709212274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Soft_Sax.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Soft_Sax.assets.bank
+  Name: Soft_Sax.assets
+  StudioPath: bank:/Bamboleo/Soft_Sax.assets
+  lastModified: 638508625246222080
+  FileSizes:
+  - Name: Desktop
+    Value: 321504
+  Exists: 1
+--- !u!114 &5286367546986073305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Jazz_Guitar
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Jazz_Guitar
+  Guid:
+    Data1: -1884801878
+    Data2: 1149777638
+    Data3: -866449747
+    Data4: 2081538009
+  Banks:
+  - {fileID: -2346121170126093555}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138604
+--- !u!114 &5584272788208647959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/AcousticGuitar1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/AcousticGuitar1
+  Guid:
+    Data1: 1578233992
+    Data2: 1136900265
+    Data3: -26230610
+    Data4: 1475046462
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &5620912600335793804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank D.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank D.assets.bank
+  Name: Bank D.assets
+  StudioPath: bank:/Queen/Bank D.assets
+  lastModified: 638508643974124131
+  FileSizes:
+  - Name: Desktop
+    Value: 1230688
+  Exists: 1
+--- !u!114 &5780656209723820677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Accordion.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Accordion.bank
+  Name: Accordion
+  StudioPath: bank:/Bamboleo/Accordion
+  lastModified: 638508625242625988
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &5899247443030914015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/PruebaJack.bank
+  m_EditorClassIdentifier: 
+  Path: ../Hit the Road Jack FMOD/Build/Desktop/PruebaJack.bank
+  Name: PruebaJack
+  StudioPath: bank:/PruebaJack
+  lastModified: 638508438983601317
+  FileSizes:
+  - Name: Desktop
+    Value: 13054016
+  Exists: 1
+--- !u!114 &6059697020161797686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Accordion.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Accordion.bank
+  Name: Accordion
+  StudioPath: bank:/Bamboleo/Accordion
+  lastModified: 638508625242625988
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &6071730698977190021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Guitar
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Guitar
+  Guid:
+    Data1: 354568016
+    Data2: 1201247984
+    Data3: -2102302578
+    Data4: 1187906382
+  Banks:
+  - {fileID: 2377546114600116917}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138604
+--- !u!114 &6530673495459198371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/BackingVocals1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/BackingVocals1
+  Guid:
+    Data1: -1527608126
+    Data2: 1297546313
+    Data3: 413495719
+    Data4: 1926005910
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &6709145176630888245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Vocals1
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Vocals1
+  Guid:
+    Data1: 410934396
+    Data2: 1225181910
+    Data3: 1084841616
+    Data4: -2104047904
+  Banks:
+  - {fileID: 7945548532695094877}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &7073209531241585926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bamboleo.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bamboleo.assets.bank
+  Name: Bamboleo.assets
+  StudioPath: bank:/FullTracks/Bamboleo.assets
+  lastModified: 638508643971588028
+  FileSizes:
+  - Name: Desktop
+    Value: 1958336
+  Exists: 1
+--- !u!114 &7427418176281610902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/LeadGuitar2
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/LeadGuitar2
+  Guid:
+    Data1: -219769286
+    Data2: 1180793931
+    Data3: -1286604873
+    Data4: -1183463254
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &7498288023045540898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bamboleo.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bamboleo.bank
+  Name: Bamboleo
+  StudioPath: bank:/FullTracks/Bamboleo
+  lastModified: 638508643970991222
+  FileSizes:
+  - Name: Desktop
+    Value: 2956
+  Exists: 1
+--- !u!114 &7945548532695094877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank D.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank D.bank
+  Name: Bank D
+  StudioPath: bank:/Queen/Bank D
+  lastModified: 638508643973789273
+  FileSizes:
+  - Name: Desktop
+    Value: 1728
+  Exists: 1
+--- !u!114 &8129396808540605006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638508633190523370
+  FileSizes:
+  - Name: Desktop
+    Value: 2720
+  Exists: 1
+--- !u!114 &8497670612616688611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Queen/Kick
+  m_EditorClassIdentifier: 
+  Path: event:/Queen/Kick
+  Guid:
+    Data1: 672268612
+    Data2: 1315420697
+    Data3: -1244383041
+    Data4: 709638108
+  Banks:
+  - {fileID: 3332019559795595331}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 256170
+--- !u!114 &8612049590745066918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Bamboleo/Volumen
+  m_EditorClassIdentifier: 
+  Name: Volumen
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2682423192
+    data2: 2592034594
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8630473387134906486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Guitar.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Guitar.assets.bank
+  Name: Guitar.assets
+  StudioPath: bank:/Bamboleo/Guitar.assets
+  lastModified: 638508625244928711
+  FileSizes:
+  - Name: Desktop
+    Value: 858368
+  Exists: 1
+--- !u!114 &8808314477334702170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bamboleo.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bamboleo.assets.bank
+  Name: Bamboleo.assets
+  StudioPath: bank:/FullTracks/Bamboleo.assets
+  lastModified: 638508625246815576
+  FileSizes:
+  - Name: Desktop
+    Value: 1958336
+  Exists: 1
+--- !u!114 &8995865127149845758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Clarinet
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Clarinet
+  Guid:
+    Data1: 961090370
+    Data2: 1304864677
+    Data3: -1948582748
+    Data4: 603682329
+  Banks:
+  - {fileID: -5940071807881996751}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138612
+--- !u!114 &9014179140990387528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bamboleo/Clarinet
+  m_EditorClassIdentifier: 
+  Path: event:/Bamboleo/Clarinet
+  Guid:
+    Data1: 961090370
+    Data2: 1304864677
+    Data3: -1948582748
+    Data4: 603682329
+  Banks:
+  - {fileID: -6857473938163774200}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 138612
+--- !u!114 &9149811667417698604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Soft_Sax.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Soft_Sax.assets.bank
+  Name: Soft_Sax.assets
+  StudioPath: bank:/Bamboleo/Soft_Sax.assets
+  lastModified: 638508625246222080
+  FileSizes:
+  - Name: Desktop
+    Value: 321504
+  Exists: 1
