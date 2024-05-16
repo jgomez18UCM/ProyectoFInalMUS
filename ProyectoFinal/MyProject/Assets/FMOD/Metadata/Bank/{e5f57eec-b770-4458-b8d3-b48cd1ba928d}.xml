@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{e5f57eec-b770-4458-b8d3-b48cd1ba928d}">
+		<property name="name">
+			<value>Soft_Sax</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b74988f7-0c34-4cfb-9973-2f22f465f1fa}</destination>
+		</relationship>
+	</object>
+</objects>

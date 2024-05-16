@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2f1624bc-f27b-47cd-bf26-48847331b92d}">
+		<property name="assetPath">
+			<value>FullTracks/Hit the Road Jack.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>169.40460317460318</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec60707e-b7ec-4b03-bf77-066d23a04644}</destination>
+		</relationship>
+	</object>
+</objects>
