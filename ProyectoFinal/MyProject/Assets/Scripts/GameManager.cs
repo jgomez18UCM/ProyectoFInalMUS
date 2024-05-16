@@ -5,47 +5,61 @@ using UnityEngine.SceneManagement;
 using FMODUnity;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+namespace Combat 
 {
-    public static GameManager instance;
-
-    [Header ("Volume Parameters")]
-    [SerializeField]
-    float volume;
-    public float getVolume() { return volume; }
-
-    //[SerializeField]
-    //StudioEventEmitter soundEffect;
-
-    float puntuacionFinal = 0;
-    public float getPuntuacionFinal() { return puntuacionFinal; }
-    public void setPuntuacionFinal(float p) { puntuacionFinal = p; }
-    
-
-    void Awake()
+    public class GameManager : MonoBehaviour
     {
-        if (instance == null)
+        public static GameManager instance;
+
+        [Header("Volume Parameters")]
+        [SerializeField]
+        float volume;
+        public float getVolume() { return volume; }
+
+        public List<Card> playerDeck = new List<Card>();
+        public List<Card> cardLibrary = new List<Card>();
+
+        //[SerializeField]
+        //StudioEventEmitter soundEffect;
+
+        float puntuacionFinal = 0;
+        public float getPuntuacionFinal() { return puntuacionFinal; }
+        public void setPuntuacionFinal(float p) { puntuacionFinal = p; }
+
+
+        void Awake()
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            if (instance == null)
+            {
+                instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else Destroy(gameObject);
         }
-        else Destroy(gameObject);
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        RuntimeManager.StudioSystem.setParameterByName("Volumen", volume);
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
+            RuntimeManager.StudioSystem.setParameterByName("Volumen", volume);
 
-    public void changeVolume(float vol) 
-    { 
-        volume = vol;
-        RuntimeManager.StudioSystem.setParameterByName("Volumen", volume);
-    }
+            //playerStatsUI = FindObjectOfType<PlayerStatsUI>();
+        }
 
-    public void exit()
-    {
-        Application.Quit();
+        public void changeVolume(float vol)
+        {
+            volume = vol;
+            RuntimeManager.StudioSystem.setParameterByName("Volumen", volume);
+        }
+
+        public void exit()
+        {
+            Application.Quit();
+        }
+
+        public void DisplayHealth(int healthAmount, int maxHealth)
+        {
+            //playerStatsUI.healthDisplayText.text = $"{healthAmount} / {maxHealth}";
+        }
     }
 }
+

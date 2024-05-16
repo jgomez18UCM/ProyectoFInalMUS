@@ -7,6 +7,7 @@ using System;
 using UnityEngine.UIElements;
 
 
+namespace Combat { 
 public class AudioLevelManager : MonoBehaviour
 {
     public static AudioLevelManager instance;
@@ -180,4 +181,5 @@ public class AudioLevelManager : MonoBehaviour
     //    }
     //    return FMOD.RESULT.OK;
     //}
+}
 }
