@@ -88,8 +88,6 @@ namespace Combat
                 for (int i = 0; i < enemiesArray.chance; i++)
                     turns.Add(enemiesArray);
             }
-
-            //turns.Shuffle();
         }
 
         private IEnumerator AttackPlayer()

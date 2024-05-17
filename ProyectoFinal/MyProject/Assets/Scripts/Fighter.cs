@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 namespace Combat
@@ -15,28 +15,19 @@ namespace Combat
         int currentHealth;
         int currentBlock;
 
-        public GameObject buffPrefab;
-        public Transform buffParent;
-
         [SerializeField] bool isPlayer;
-
-        Enemy enemy;
-
-        public GameObject damageIndicator;
 
         private void Awake()
         {
-            enemy = GetComponent<Enemy>();
-
             currentHealth = maxHealth;
             currentBlock = 0; 
+        }
 
-            healthBar.GetHealthBar().maxValue = maxHealth;
+        private void Start()
+        {
+            healthBar.SetHealthValue(currentHealth); 
 
             healthBar.DisplayHealth(currentHealth);
-
-            //if (isPlayer)
-                //gameManager.DisplayHealth(currentHealth, currentHealth);
         }
 
         public void TakeDamage(int amount)
@@ -56,9 +47,6 @@ namespace Combat
             currentHealth = newAmount;
 
             healthBar.DisplayHealth(newAmount);
-
-            //if (isPlayer)
-                //gameManager.DisplayHealth(newAmount, maxHealth);
         }
 
         public void AddBlock(int amount)

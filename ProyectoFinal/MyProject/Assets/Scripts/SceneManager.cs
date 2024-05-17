@@ -99,7 +99,7 @@ namespace Combat
             ChangeTurn();
         }
 
-        public void EndFight(bool win)
+        public void EndFight()
         {
             p.ResetBuffs();
         }

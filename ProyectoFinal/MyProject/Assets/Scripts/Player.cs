@@ -11,15 +11,15 @@ namespace Combat
         [SerializeField] Text drawText;
 
         [SerializeField] List<Card> deck;
-        [SerializeField] List<Card> drawPile;
-        [SerializeField] List<Card> cardsInHand;
-        [SerializeField] List<Card> discardPile;
+        [SerializeField] List<CardUI> cardsUIInHand;
+
+        List<Card> drawPile;
+        List<Card> cardsInHand;
+        List<Card> discardPile;
 
         [SerializeField] int maxEnergy;
 
-        [SerializeField] Fighter figther;  
-
-        List<CardUI> cardsInHandGameObjects;
+        [SerializeField] Fighter fighter;
 
         CardUI chosenCard; 
 
@@ -29,23 +29,19 @@ namespace Combat
         private void Start()
         {
             drawAmount = 5;
-            energy = maxEnergy;
 
-            cardsInHandGameObjects = new List<CardUI>();
+            cardsUIInHand = new List<CardUI>();
             discardPile = new List<Card>();
             cardsInHand = new List<Card>();
             drawPile = new List<Card>();
 
-            discardPile.AddRange(deck);
-            drawPile.AddRange(deck); 
+            Begin(); 
         }
 
-        public void Begin(GameObject[] prefabsArray)
+        public void Begin()
         {
             ShuffleCards();
             DrawCards(drawAmount);
-
-            energyText.text = energy.ToString();
         }
 
         public void ShuffleCards()
@@ -59,14 +55,21 @@ namespace Combat
         {
             int cardsDrawn = 0;
 
+            energy = maxEnergy;
+            energyText.text = energy.ToString();
+
             while (cardsDrawn < amountToDraw && cardsInHand.Count <= 10)
             {
+                Debug.Log(cardsInHand.Count); 
+
                 if (drawPile.Count < 1)
                     ShuffleCards();
 
-                cardsInHand.Add(drawPile[0]);
-                DisplayCardInHand(drawPile[0]);
-                drawPile.Remove(drawPile[0]);
+                cardsInHand.Add(drawPile[cardsDrawn]);
+
+                DisplayCardInHand(drawPile[cardsDrawn]);
+
+                drawPile.Remove(drawPile[cardsDrawn]);
 
                 drawText.text = drawPile.Count.ToString();
 
@@ -76,7 +79,7 @@ namespace Combat
 
         public void DisplayCardInHand(Card card)
         {
-            CardUI cardUI = cardsInHandGameObjects[cardsInHand.Count - 1];
+            CardUI cardUI = cardsUIInHand[cardsInHand.Count - 1];
             cardUI.LoadCard(card);
             cardUI.gameObject.SetActive(true);
         }
@@ -103,7 +106,7 @@ namespace Combat
         public int GetEnergy() { return energy; }
 
 
-        public Fighter GetFigther() { return figther; }
+        public Fighter GetFigther() { return fighter; }
 
 
         public int GetDrawAmount() { return drawAmount; }

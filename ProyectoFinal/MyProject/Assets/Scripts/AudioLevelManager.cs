@@ -103,7 +103,6 @@ public class AudioLevelManager : MonoBehaviour
 
             tracksInfo[i].instrument.setVolume(volumen);
             tracksInfo[i].instrument.start();
-            Debug.Log("Empezo " + i); 
         }
 
      }
