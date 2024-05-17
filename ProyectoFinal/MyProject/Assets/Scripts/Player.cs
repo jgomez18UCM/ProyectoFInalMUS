@@ -11,7 +11,6 @@ namespace Combat
         [SerializeField] Text drawText;
 
         [SerializeField] List<Card> deck;
-        [SerializeField] List<CardUI> cardsUIInHand;
 
         List<Card> drawPile;
         List<Card> cardsInHand;
@@ -21,26 +20,28 @@ namespace Combat
 
         [SerializeField] Fighter fighter;
 
-        CardUI chosenCard; 
+        CardUI chosenCard;
+        CardUI auxiliarCard; 
 
         int drawAmount;
         int energy;
 
         private void Start()
         {
-            drawAmount = 5;
+            chosenCard = new CardUI();
+            auxiliarCard = new CardUI(); 
 
-            cardsUIInHand = new List<CardUI>();
+            drawAmount = 2;
+
             discardPile = new List<Card>();
             cardsInHand = new List<Card>();
             drawPile = new List<Card>();
 
-            Begin(); 
-        }
+            discardPile.AddRange(deck); 
 
-        public void Begin()
-        {
-            ShuffleCards();
+            for (int i = 0; i < deck.Count; i++)
+                drawPile.Add(deck[i]);
+
             DrawCards(drawAmount);
         }
 
@@ -60,8 +61,6 @@ namespace Combat
 
             while (cardsDrawn < amountToDraw && cardsInHand.Count <= 10)
             {
-                Debug.Log(cardsInHand.Count); 
-
                 if (drawPile.Count < 1)
                     ShuffleCards();
 
@@ -79,9 +78,9 @@ namespace Combat
 
         public void DisplayCardInHand(Card card)
         {
-            CardUI cardUI = cardsUIInHand[cardsInHand.Count - 1];
-            cardUI.LoadCard(card);
-            cardUI.gameObject.SetActive(true);
+            auxiliarCard.LoadCard(card);
+
+            auxiliarCard.gameObject.SetActive(true);
         }
 
         public void PlayCard(CardUI cardUI)

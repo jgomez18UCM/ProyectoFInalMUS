@@ -20,8 +20,6 @@ namespace Combat
         {
             card = c;
 
-            gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
-
             cardDescriptionText.text = card.GetCardDescription();
 
             cardCostText.text = card.GetCardCost().ToString();
