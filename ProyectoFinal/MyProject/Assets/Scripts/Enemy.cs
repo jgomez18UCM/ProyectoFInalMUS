@@ -1,15 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
-using TMPro;
+using UnityEngine;
+
 
 namespace Combat
 {
     public struct EnemyAction
     {
         public IntentType intentType;
-        public enum IntentType { Attack, Block, StrategicBuff, StrategicDebuff, AttackDebuff }
+        public enum IntentType { Attack, Block, Buff, Debuff }
 
         public int chance;
         public int amount;
@@ -19,43 +19,44 @@ namespace Combat
 
         public Sprite icon;
     }
+
+
     public class Enemy : MonoBehaviour
     {
-        public List<EnemyAction> enemyActions;
-        public List<EnemyAction> turns = new List<EnemyAction>();
-        public int turnNumber;
-        public bool shuffleActions;
-        public Fighter thisEnemy;
+        [SerializeField] Image intentIcon;
+        [SerializeField] Text intentAmount;
 
-        [Header("UI")]
-        public Image intentIcon;
-        public TMP_Text intentAmount;
+        List<EnemyAction> enemyActions;
+        List<EnemyAction> turns;
+        
+        int turnNumber;
+        
+        bool shuffle;
 
-        [Header("Specifics")]
-        BattleSceneManager battleSceneManager;
         Fighter player;
-        Animator animator;
-        public bool midTurn;
+        Fighter enemy;
 
         private void Start()
         {
-            battleSceneManager = FindObjectOfType<BattleSceneManager>();
-            player = battleSceneManager.player;
-            thisEnemy = GetComponent<Fighter>();
-            animator = GetComponent<Animator>();
+            turns = new List<EnemyAction>();
 
-            if (shuffleActions)
+            enemy = GetComponent<Fighter>();
+
+            if (shuffle)
                 GenerateTurns();
         }
+
+
         private void LoadEnemy()
         {
-            battleSceneManager = FindObjectOfType<BattleSceneManager>();
-            player = battleSceneManager.player;
-            thisEnemy = GetComponent<Fighter>();
-
-            if (shuffleActions)
+            if (shuffle)
                 GenerateTurns();
         }
+
+
+        public Fighter GetFigtherEnemy() { return enemy; }
+
+
         public void TakeTurn()
         {
             switch (turns[turnNumber].intentType)
@@ -67,17 +68,13 @@ namespace Combat
                     PerformBlock();
                     StartCoroutine(ApplyBuff());
                     break;
-                case EnemyAction.IntentType.StrategicBuff:
+                case EnemyAction.IntentType.Buff:
                     ApplyBuffToSelf(turns[turnNumber].buffType);
                     StartCoroutine(ApplyBuff());
                     break;
-                case EnemyAction.IntentType.StrategicDebuff:
+                case EnemyAction.IntentType.Debuff:
                     ApplyDebuffToPlayer(turns[turnNumber].buffType);
                     StartCoroutine(ApplyBuff());
-                    break;
-                case EnemyAction.IntentType.AttackDebuff:
-                    ApplyDebuffToPlayer(turns[turnNumber].buffType);
-                    StartCoroutine(AttackPlayer());
                     break;
                 default:
                     Debug.Log("El enemigo no ha hecho ninguna accion");
@@ -86,19 +83,18 @@ namespace Combat
         }
         public void GenerateTurns()
         {
-            foreach (EnemyAction eA in enemyActions)
+            foreach (EnemyAction enemiesArray in enemyActions)
             {
-                for (int i = 0; i < eA.chance; i++)
-                    turns.Add(eA);
+                for (int i = 0; i < enemiesArray.chance; i++)
+                    turns.Add(enemiesArray);
             }
+
             //turns.Shuffle();
         }
 
         private IEnumerator AttackPlayer()
         {
-            animator.Play("Attack");
-
-            int totalDamage = turns[turnNumber].amount + thisEnemy.getStrength().value;
+            int totalDamage = turns[turnNumber].amount + enemy.getStrength().value;
 
             if (player.getVulnerable().value > 0)
                 totalDamage *= 2;
@@ -109,11 +105,15 @@ namespace Combat
             yield return new WaitForSeconds(0.5f);
             WrapUpTurn();
         }
+
+
         private IEnumerator ApplyBuff()
         {
             yield return new WaitForSeconds(1f);
             WrapUpTurn();
         }
+
+
         private void WrapUpTurn()
         {
             turnNumber++;
@@ -121,13 +121,16 @@ namespace Combat
             if (turnNumber == turns.Count)
                 turnNumber = 0;
 
-            thisEnemy.EvaluateBuffsAtTurnEnd();
-            midTurn = false;
+            enemy.EvaluateBuffsAtTurnEnd();
         }
+
+
         private void ApplyBuffToSelf(Buff.Type t)
         {
-            thisEnemy.AddBuff(t, turns[turnNumber].amount);
+            enemy.AddBuff(t, turns[turnNumber].amount);
         }
+
+
         private void ApplyDebuffToPlayer(Buff.Type t)
         {
             if (player == null)
@@ -135,10 +138,14 @@ namespace Combat
 
             player.AddBuff(t, turns[turnNumber].debuffAmount);
         }
+
+
         private void PerformBlock()
         {
-            thisEnemy.AddBlock(turns[turnNumber].amount);
+            enemy.AddBlock(turns[turnNumber].amount);
         }
+
+
         public void DisplayIntent()
         {
             if (turns.Count == 0)
@@ -148,7 +155,7 @@ namespace Combat
 
             if (turns[turnNumber].intentType == EnemyAction.IntentType.Attack)
             {
-                int totalDamage = turns[turnNumber].amount + thisEnemy.getStrength().value;
+                int totalDamage = turns[turnNumber].amount + enemy.getStrength().value;
 
                 if (player.getVulnerable().value > 0)
                     totalDamage *= 2;

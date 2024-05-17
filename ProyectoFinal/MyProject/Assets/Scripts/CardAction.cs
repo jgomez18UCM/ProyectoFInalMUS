@@ -1,22 +1,19 @@
-using Combat;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Combat
 {
     public class CardActions : MonoBehaviour
     {
-        [SerializeField] Fighter player;
+        [SerializeField] Player player;
 
+        Fighter playerFighter;
         Fighter target;
         Card card; 
 
-        BattleSceneManager battleSceneManager;
-
         private void Awake()
         {
-            battleSceneManager = FindObjectOfType<BattleSceneManager>();
+            player = GetComponent<Player>();
+            playerFighter = player.GetFigther(); 
         }
         public void PerformAction(Card c, Fighter t)
         {
@@ -28,7 +25,7 @@ namespace Combat
                 case "Strike":
                     AttackEnemy();
                     break;
-                case "Defend":
+                case "Block":
                     PerformBlock();
                     break;
                 case "Bash":
@@ -47,8 +44,7 @@ namespace Combat
                     PerformBlock();
                     break;
                 case "Bloodletting":
-                    AttackSelf();
-                    battleSceneManager.energy += 2;
+                    player.SetEnergy(player.GetEnergy() + 2);
                     break;
                 case "Bodyslam":
                     BodySlam();
@@ -63,7 +59,7 @@ namespace Combat
         }
         private void AttackEnemy()
         {
-            int damage = card.GetCardEffectAmount() + player.getWeak().value;
+            int damage = card.GetCardEffectAmount() + playerFighter.getWeak().value;
 
             VulnerableAttack(damage);
 
@@ -72,7 +68,7 @@ namespace Combat
 
         private void AttackStrength()
         {
-            int damage = card.GetCardEffectAmount() + (player.getStrength().value * 3);
+            int damage = card.GetCardEffectAmount() + (playerFighter.getStrength().value * 3);
 
             VulnerableAttack(damage); 
             
@@ -89,7 +85,7 @@ namespace Combat
 
         private void BodySlam()
         {
-            int damage = player.getBlock();
+            int damage = playerFighter.getBlock();
 
             VulnerableAttack(damage); 
 
@@ -98,7 +94,7 @@ namespace Combat
 
         private void Entrench()
         {
-            player.AddBlock(player.getBlock());
+            playerFighter.AddBlock(playerFighter.getBlock());
         }
 
         private void ApplyBuff(Buff.Type t)
@@ -108,17 +104,12 @@ namespace Combat
 
         private void ApplyBuffToSelf(Buff.Type t)
         {
-            player.AddBuff(t, card.GetBuffAmount());
-        }
-
-        private void AttackSelf()
-        {
-            player.TakeDamage(2);
+            playerFighter.AddBuff(t, card.GetBuffAmount());
         }
 
         private void PerformBlock()
         {
-            player.AddBlock(card.GetCardEffectAmount());
+            playerFighter.AddBlock(card.GetCardEffectAmount());
         }
     }
 }

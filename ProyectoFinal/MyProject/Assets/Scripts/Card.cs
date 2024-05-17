@@ -1,3 +1,4 @@
+using UnityEngine.UI; 
 using UnityEngine;
 
 namespace Combat
@@ -5,14 +6,15 @@ namespace Combat
     [CreateAssetMenu]
     public class Card : ScriptableObject
     {
-        public Sprite cardIcon;
+        [SerializeField] Sprite cardIcon;
+        [SerializeField] CardInfo card;
 
-        CardInfo card;
 
         CardClass cardClass;
         CardTarget cardTarget;
         CardType cardType;
         
+
         public enum CardClass { Normal, Curse}
         public enum CardTarget { Self, Enemy };
         public enum CardType { Attack, Defense, Buff }
@@ -20,17 +22,30 @@ namespace Combat
 
         public int GetCardCost() { return card.cost; }
         public int GetCardEffectAmount() { return card.value; }
-        public int GetBuffAmount() { return card.buff; }
+        public int GetBuffAmount() { return card.buff.value; }
 
-        public Buff.Type getBuffType() { return card.buffType; }
+
+        public Buff.Type getBuffType() { return card.buff.type; }
+
 
         public CardType getCardType() { return cardType; }
         public CardClass getCardClass() { return cardClass; }
         public CardTarget getCardTarget() { return cardTarget; }
 
+
+        public void SetCardType(CardType type) { cardType = type; }
+        public void SetCardClass(CardClass clas) { cardClass = clas; }
+        public void SetCardTarget(CardTarget target) { cardTarget = target; }
+
+
         public string GetCardDescription() { return card.description; }
         public string GetCardName() { return card.name; }
+
+
+        public void SetCardIcon(Sprite icon) { cardIcon = icon;}
+        public Sprite GetCardIcon() { return cardIcon; }
     }
+
 
     [System.Serializable]
     public struct CardInfo
@@ -39,16 +54,16 @@ namespace Combat
         public string name; 
 
         public int value;
-        public int buff;
-        public int cost; 
+        public int cost;
 
-        public Buff.Type buffType;
+        public Buff buff;
     }
+
 
     [System.Serializable]
     public struct Buff
     {
-        public enum Type { strong, vulnerable, weak }
+        public enum Type { none, strong, vulnerable, weak }
         public Type type;
 
         public Sprite icon;

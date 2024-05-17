@@ -5,12 +5,13 @@ namespace Combat
     public class CardFly : MonoBehaviour
     {
         public Transform targetPosition;
-        BattleSceneManager battleSceneManager;
+
+        [SerializeField] Player player; 
 
         private void Awake()
         {
-            battleSceneManager = FindObjectOfType<BattleSceneManager>();
-            targetPosition = battleSceneManager.discardPileCountText.transform;
+            player = GetComponent<Player>(); 
+            targetPosition = player.GetDiscardText().transform;
         }
 
         public void Update()

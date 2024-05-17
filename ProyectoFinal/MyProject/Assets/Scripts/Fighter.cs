@@ -5,10 +5,8 @@ namespace Combat
 {
     public class Fighter : MonoBehaviour
     {
-        
         [SerializeField] int maxHealth;
         [SerializeField] HealthBar healthBar;
-        [SerializeField] List<Card> cards; 
 
         Buff vulnerable;
         Buff weak;
@@ -24,14 +22,11 @@ namespace Combat
 
         Enemy enemy;
 
-        BattleSceneManager battleSceneManager;
-
         public GameObject damageIndicator;
 
         private void Awake()
         {
             enemy = GetComponent<Enemy>();
-            battleSceneManager = FindObjectOfType<BattleSceneManager>();
 
             currentHealth = maxHealth;
             currentBlock = 0; 
@@ -53,14 +48,7 @@ namespace Combat
             UpdateHealthUI(currentHealth);
 
             if (currentHealth <= 0)
-            {
-                if (enemy != null)
-                    battleSceneManager.EndFight(true);
-                else
-                    battleSceneManager.EndFight(false);
-
                 Destroy(gameObject);
-            }
         }
 
         public void UpdateHealthUI(int newAmount)
