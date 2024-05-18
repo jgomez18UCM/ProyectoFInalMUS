@@ -149,7 +149,7 @@ namespace Combat
             if (turns.Count == 0)
                 LoadEnemy();
 
-            intentIcon.sprite = turns[turnNumber].icon;
+            //intentIcon.sprite = turns[turnNumber].icon;
 
             if (turns[turnNumber].intentType == EnemyAction.IntentType.Attack)
             {

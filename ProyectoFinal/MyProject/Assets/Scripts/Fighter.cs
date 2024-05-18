@@ -15,8 +15,6 @@ namespace Combat
         int currentHealth;
         int currentBlock;
 
-        [SerializeField] bool isPlayer;
-
         private void Awake()
         {
             currentHealth = maxHealth;
