@@ -15,7 +15,7 @@ namespace Combat
 
         private void Start()
         {
-            healthSlider = GetComponent<Slider>();
+            healthSlider = this.gameObject.GetComponent<Slider>();
 
             ActiveBlockElements(false);
         }

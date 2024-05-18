@@ -11,6 +11,7 @@ namespace Combat
         [SerializeField] Text drawText;
 
         [SerializeField] List<Card> deck;
+        [SerializeField] List<CardUI> cardsUIInHand;
 
         List<Card> drawPile;
         List<Card> cardsInHand;
@@ -39,15 +40,18 @@ namespace Combat
 
             discardPile.AddRange(deck); 
 
-            for (int i = 0; i < deck.Count; i++)
-                drawPile.Add(deck[i]);
+            ShuffleCards(); 
 
             DrawCards(drawAmount);
         }
 
         public void ShuffleCards()
         {
+            discardPile.Shuffle();
+
             drawPile = discardPile;
+
+            discardPile = new List<Card>();
 
             discardText.text = discardPile.Count.ToString();
         }
@@ -64,11 +68,11 @@ namespace Combat
                 if (drawPile.Count < 1)
                     ShuffleCards();
 
-                cardsInHand.Add(drawPile[cardsDrawn]);
+                cardsInHand.Add(drawPile[0]);
 
-                DisplayCardInHand(drawPile[cardsDrawn]);
+                DisplayCardInHand(drawPile[0]);
 
-                drawPile.Remove(drawPile[cardsDrawn]);
+                drawPile.Remove(drawPile[0]);
 
                 drawText.text = drawPile.Count.ToString();
 
@@ -78,6 +82,8 @@ namespace Combat
 
         public void DisplayCardInHand(Card card)
         {
+            auxiliarCard = cardsUIInHand[cardsInHand.Count - 1];
+
             auxiliarCard.LoadCard(card);
 
             auxiliarCard.gameObject.SetActive(true);
