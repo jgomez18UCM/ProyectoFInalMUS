@@ -56,9 +56,6 @@ namespace Combat
                 case "Bodyslam":
                     BodySlam();
                     break;
-                case "Entrench":
-                    Entrench();
-                    break;
                 default:
                     Debug.Log("Carta no existente");
                     break;
@@ -68,7 +65,7 @@ namespace Combat
         {
             int damage = card.GetCardEffectAmount() + fighter.getWeak().value;
 
-            damage = VulnerableAttack(damage);
+            damage = TotalDamage(damage);
 
             if (target != null)
                 target.TakeDamage(damage);
@@ -78,10 +75,19 @@ namespace Combat
         {
             int damage = card.GetCardEffectAmount() + (fighter.getStrength().value * 3);
 
-            damage = VulnerableAttack(damage);
+            damage = TotalDamage(damage);  
 
             if (target != null)
                 target.TakeDamage(damage);
+        }
+
+        private int TotalDamage(int damage)
+        {
+            damage = StrongAttack(damage);
+            damage = VulnerableAttack(damage);
+            damage = WeakAttack(damage); 
+
+            return damage; 
         }
 
         private int VulnerableAttack(int damage)
@@ -92,19 +98,30 @@ namespace Combat
             return damage; 
         }
 
+        private int WeakAttack(int damage)
+        {
+            if (fighter.getWeak().value > 0)
+                damage /= 2;
+
+            return damage; 
+        }
+
+        private int StrongAttack(int damage)
+        {
+            if (fighter.getStrength().value > 0)
+                damage += fighter.getStrength().value;
+
+            return damage; 
+        }
+
         private void BodySlam()
         {
             int damage = fighter.getBlock();
 
-            damage =VulnerableAttack(damage);
+            damage = TotalDamage(damage);
 
             if (target != null)
                 target.TakeDamage(damage);
-        }
-
-        private void Entrench()
-        {
-            fighter.AddBlock(fighter.getBlock());
         }
 
         private void ApplyBuff(Buff.Type t)

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardIcon: {fileID: 0}
   card:
-    description: Defensa de 5
+    description: +5 Bloq.
     name: Block
     value: 5
     cost: 1

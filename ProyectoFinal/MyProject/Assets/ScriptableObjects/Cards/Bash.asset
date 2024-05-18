@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardIcon: {fileID: 0}
   card:
-    description: Ataque de 8 y vulnerabilidad
+    description: +8 Atq. y 2 Vul.
     name: Bash
-    value: 7
+    value: 8
     cost: 2
     buff:
       type: 2

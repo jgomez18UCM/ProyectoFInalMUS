@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd4887e5d3c123e498b53fdbe1435273, type: 3}
-  m_Name: Clothesline
+  m_Name: Ironwave
   m_EditorClassIdentifier: 
   cardIcon: {fileID: 0}
   card:
-    description: 6 Atq. y 2 Deb.
-    name: Clothesline
-    value: 6
+    description: 5 Atq. y +5 Bloq.
+    name: Ironwave
+    value: 5
     cost: 2
     buff:
-      type: 3
-      icon: {fileID: 21300104, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+      type: 0
+      icon: {fileID: 21300102, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
       value: 2
