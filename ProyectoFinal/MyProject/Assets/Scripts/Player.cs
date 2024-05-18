@@ -118,6 +118,15 @@ namespace Combat
             discardText.text = discardPile.Count.ToString();
         }
 
+        public void DiscardHand()
+        {
+            foreach (Card card in cardsInHand)
+            {
+                //cardsInHand.Remove(card);
+                //DiscardCard(card); 
+            }
+        }
+
 
         public void SetEnergy(int value) { energy = value; }
         public int GetEnergy() { return energy; }

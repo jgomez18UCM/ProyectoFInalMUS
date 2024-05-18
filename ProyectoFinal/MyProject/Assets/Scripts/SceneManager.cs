@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
+using System;
 
 namespace Combat
 {
@@ -43,8 +44,18 @@ namespace Combat
 
         public void ChangeTurn()
         {
+            for (int i = 0; i < enemiesArray.Count;)
+            {
+                if (enemiesArray[i] == null)
+                    enemiesArray.Remove(enemiesArray[i]);
+                else
+                    i++;
+            }
+
             if (turn == Turn.Player)
             {
+                player.DiscardHand();
+
                 turn = Turn.Enemy;
                 endTurnButton.enabled = false;
 
@@ -77,6 +88,7 @@ namespace Combat
                 //turnText.text = "Player's Turn";
             }
         }
+
         private IEnumerator HandleEnemyTurn()
         {
             //turnText.text = "Enemy's Turn";
