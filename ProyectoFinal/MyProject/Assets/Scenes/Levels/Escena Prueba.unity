@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 125747701}
   - component: {fileID: 125747703}
   - component: {fileID: 125747702}
+  - component: {fileID: 125747704}
   m_Layer: 0
   m_Name: Yellow
   m_TagString: Untagged
@@ -702,11 +703,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 410934396
-      Data2: 1225181910
-      Data3: 1084841616
-      Data4: -2104047904
-    Path: event:/Queen/Vocals1
+      Data1: -1907471896
+      Data2: 1273728299
+      Data3: 267269287
+      Data4: 2088974348
+    Path: event:/Song/Song_Piano
   Event: 
   PlayEvent: 1
   StopEvent: 0
@@ -714,7 +715,11 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params: []
+  Params:
+  - Name: Alive
+    Value: 1
+  - Name: Debuff
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -811,6 +816,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 728261051}
+--- !u!114 &125747704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125747694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68efdd7c952372a4b947c55945ded3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &129555703
 GameObject:
   m_ObjectHideFlags: 0
@@ -8163,6 +8180,7 @@ GameObject:
   - component: {fileID: 1416118716}
   - component: {fileID: 1416118718}
   - component: {fileID: 1416118717}
+  - component: {fileID: 1416118719}
   m_Layer: 0
   m_Name: Green
   m_TagString: Untagged
@@ -8202,11 +8220,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -29435032
-      Data2: 1204763520
-      Data3: -2094070643
-      Data4: -1856095515
-    Path: event:/Queen/Bass
+      Data1: 250011540
+      Data2: 1148048328
+      Data3: 1974991242
+      Data4: -1482335853
+    Path: event:/Song/Song_Drums
   Event: 
   PlayEvent: 1
   StopEvent: 0
@@ -8214,7 +8232,11 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params: []
+  Params:
+  - Name: Alive
+    Value: 1
+  - Name: Debuff
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -8311,6 +8333,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 728261051}
+--- !u!114 &1416118719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416118709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68efdd7c952372a4b947c55945ded3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1435204052
 GameObject:
   m_ObjectHideFlags: 0
@@ -9337,6 +9371,7 @@ GameObject:
   - component: {fileID: 1643952510}
   - component: {fileID: 1643952512}
   - component: {fileID: 1643952511}
+  - component: {fileID: 1643952513}
   m_Layer: 0
   m_Name: Blue
   m_TagString: Untagged
@@ -9376,11 +9411,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 916306525
-      Data2: 1119418358
-      Data3: 207854230
-      Data4: 970112738
-    Path: event:/Queen/Room1
+      Data1: -983737578
+      Data2: 1287353569
+      Data3: -1670164591
+      Data4: -76922991
+    Path: event:/Song/Song_Flute
   Event: 
   PlayEvent: 1
   StopEvent: 0
@@ -9388,7 +9423,11 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params: []
+  Params:
+  - Name: Alive
+    Value: 1
+  - Name: Debuff
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -9485,6 +9524,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 728261051}
+--- !u!114 &1643952513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643952503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68efdd7c952372a4b947c55945ded3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1652838148
 GameObject:
   m_ObjectHideFlags: 0
@@ -10129,6 +10180,7 @@ GameObject:
   - component: {fileID: 1786721630}
   - component: {fileID: 1786721632}
   - component: {fileID: 1786721631}
+  - component: {fileID: 1786721634}
   m_Layer: 0
   m_Name: Pink
   m_TagString: Untagged
@@ -10168,11 +10220,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1578233992
-      Data2: 1136900265
-      Data3: -26230610
-      Data4: 1475046462
-    Path: event:/Queen/AcousticGuitar1
+      Data1: 439678011
+      Data2: 1106972906
+      Data3: 827397764
+      Data4: -1270382855
+    Path: event:/Song/Song_Violin
   Event: 
   PlayEvent: 1
   StopEvent: 0
@@ -10180,7 +10232,11 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params: []
+  Params:
+  - Name: Alive
+    Value: 1
+  - Name: Debuff
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -10277,6 +10333,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 728261051}
+--- !u!114 &1786721634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786721624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68efdd7c952372a4b947c55945ded3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1792542545
 GameObject:
   m_ObjectHideFlags: 0

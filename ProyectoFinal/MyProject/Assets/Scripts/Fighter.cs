@@ -12,6 +12,8 @@ namespace Combat
         [SerializeField] Image strongIcon;
         [SerializeField] Image weakIcon;
 
+        EnemyAudio enemyAudio = null;
+
         Buff vulnerable;
         Buff weak;
         Buff strong;
@@ -34,7 +36,13 @@ namespace Combat
 
             vulnerableIcon.enabled = false;
             strongIcon.enabled = false;
-            weakIcon.enabled = false; 
+            weakIcon.enabled = false;
+
+            enemyAudio = GetComponent<EnemyAudio>();
+            if (enemyAudio != null)
+            {
+                enemyAudio.SetAlive(true);
+            }
         }
 
         public void TakeDamage(int amount)
@@ -46,7 +54,13 @@ namespace Combat
             UpdateHealthUI(currentHealth);
 
             if (currentHealth <= 0)
-                Destroy(gameObject);
+            {
+                if (enemyAudio != null)
+                {
+                    enemyAudio.SetAlive(false);
+                }
+               gameObject.SetActive(false);
+            }
         }
 
         public void UpdateHealthUI(int newAmount)
@@ -94,7 +108,11 @@ namespace Combat
                 vulnerable.value += amount;
 
                 if (!vulnerableIcon.enabled)
-                    vulnerableIcon.enabled = true; 
+                    vulnerableIcon.enabled = true;
+                if (enemyAudio != null)
+                {
+                    enemyAudio.SetDebuffed(true);
+                }
             }
 
             else if (type == Buff.Type.weak)
@@ -103,6 +121,11 @@ namespace Combat
 
                 if (!weakIcon.enabled)
                     weakIcon.enabled = true;
+
+                if (enemyAudio != null)
+                {
+                    enemyAudio.SetDebuffed(true);
+                }
             }
 
             else if (type == Buff.Type.strong)
@@ -142,6 +165,14 @@ namespace Combat
                 if (weak.value == 0)
                     weakIcon.enabled = false;
             }
+
+            if(weak.value == 0 && vulnerable.value == 0)
+            {
+                if (enemyAudio != null)
+                {
+                    enemyAudio.SetDebuffed(false);
+                }
+            }
         }
         public void ResetBuffs()
         {
@@ -157,6 +188,10 @@ namespace Combat
             currentBlock = 0;
 
             healthBar.DisplayBlock(0);
+            if (enemyAudio != null)
+            {
+                enemyAudio.SetDebuffed(false);
+            }
         }
     }
 }
