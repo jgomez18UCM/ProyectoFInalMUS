@@ -7,46 +7,38 @@ namespace Combat
 {
     public class SceneManager : MonoBehaviour
     {
-        public Fighter cardTarget;
-        public Fighter p;
-
-        [SerializeField] Player player;
-
-        int maxEnergy;
-
         enum Turn { Player, Enemy };
         Turn turn;
 
+        [SerializeField] Player player;
+
         [SerializeField] Button endTurnButton;
 
-        [SerializeField] List<Enemy> enemies;
-
-        [SerializeField] GameObject[] possibleEnemies;
+        [SerializeField] GameObject[] enemies;
 
         [SerializeField] Text turnText;
 
-        public void StartFight()
-        {
-            List<Enemy> enemies = new List<Enemy>();
+        List<Enemy> enemiesArray;
 
-            BeginBattle(possibleEnemies);
+        private void Start()
+        {
+            enemiesArray = new List<Enemy>();
+
+            BeginBattle();
         }
 
-        public void BeginBattle(GameObject[] prefabsArray)
+        public void BeginBattle()
         {
-            turnText.text = "Player's Turn";
+            //turnText.text = "Player's Turn";
 
-            Enemy[] enemiesArray = FindObjectsOfType<Enemy>();
-
-            enemies = new List<Enemy>();
-
-            foreach (Enemy e in enemiesArray)
+            for (int i = 0; i < enemies.Length; i++)
             {
-                enemies.Add(e);
-                e.DisplayIntent();
-            }
+                Enemy e = enemies[i].GetComponent<Enemy>();
 
-            maxEnergy = player.GetEnergy();
+                enemiesArray.Add(e);
+
+                e.DisplayIntent(); 
+            }
         }
 
         public void ChangeTurn()
@@ -56,44 +48,42 @@ namespace Combat
                 turn = Turn.Enemy;
                 endTurnButton.enabled = false;
 
-                foreach (Enemy e in enemies)
+                foreach (Enemy e in enemiesArray)
                 {
                     e.GetFigtherEnemy().setBlock(0);
 
                     e.GetFigtherEnemy().getHealthBar().DisplayBlock(0);
                 }
 
-                p.EvaluateBuffsAtTurnEnd();
+                player.GetFigther().EvaluateBuffsAtTurnEnd();
                 StartCoroutine(HandleEnemyTurn());
             }
 
             else
             {
-                foreach (Enemy e in enemies)
+                foreach (Enemy e in enemiesArray)
                     e.DisplayIntent();
 
                 turn = Turn.Player;
 
-                p.setBlock(0);
+                player.GetFigther().setBlock(0);
 
-                p.getHealthBar().DisplayBlock(0);
-
-                player.SetEnergy(maxEnergy);
+                player.GetFigther().getHealthBar().DisplayBlock(0);
 
                 endTurnButton.enabled = true;
 
                 player.DrawCards(player.GetDrawAmount());
 
-                turnText.text = "Player's Turn";
+                //turnText.text = "Player's Turn";
             }
         }
         private IEnumerator HandleEnemyTurn()
         {
-            turnText.text = "Enemy's Turn";
+            //turnText.text = "Enemy's Turn";
 
             yield return new WaitForSeconds(1.5f);
 
-            foreach (Enemy enemy in enemies)
+            foreach (Enemy enemy in enemiesArray)
                 enemy.TakeTurn();
 
             ChangeTurn();
@@ -101,7 +91,7 @@ namespace Combat
 
         public void EndFight()
         {
-            p.ResetBuffs();
+            player.GetFigther().ResetBuffs();
         }
     }
 }

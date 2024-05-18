@@ -4,17 +4,20 @@ namespace Combat
 {
     public class CardActions : MonoBehaviour
     {
-        [SerializeField] Player player;
+        Player player;
 
-        Fighter playerFighter;
+        Fighter fighter;
         Fighter target;
+
         Card card; 
 
         private void Awake()
         {
-            player = GetComponent<Player>();
-            playerFighter = player.GetFigther(); 
+            player = this.gameObject.GetComponent<Player>();
+
+            fighter = player.GetFigther(); 
         }
+
         public void PerformAction(Card c, Fighter t)
         {
             card = c;
@@ -29,6 +32,10 @@ namespace Combat
                     PerformBlock();
                     break;
                 case "Bash":
+                    AttackEnemy();
+                    ApplyBuff(Buff.Type.vulnerable);
+                    break;
+                case "Thunderclap":
                     AttackEnemy();
                     ApplyBuff(Buff.Type.vulnerable);
                     break;
@@ -59,25 +66,27 @@ namespace Combat
         }
         private void AttackEnemy()
         {
-            int damage = card.GetCardEffectAmount() + playerFighter.getWeak().value;
+            int damage = card.GetCardEffectAmount() + fighter.getWeak().value;
 
             VulnerableAttack(damage);
 
-            target.TakeDamage(damage);
+            if (target != null)
+                target.TakeDamage(damage);
         }
 
         private void AttackStrength()
         {
-            int damage = card.GetCardEffectAmount() + (playerFighter.getStrength().value * 3);
+            int damage = card.GetCardEffectAmount() + (fighter.getStrength().value * 3);
 
-            VulnerableAttack(damage); 
-            
-            target.TakeDamage(damage);
+            VulnerableAttack(damage);
+
+            if (target != null)
+                target.TakeDamage(damage);
         }
 
         private int VulnerableAttack(int damage)
         {
-            if (target.getVulnerable().value > 0)
+            if (target != null && target.getVulnerable().value > 0)
                 damage *= 2;
 
             return damage; 
@@ -85,31 +94,33 @@ namespace Combat
 
         private void BodySlam()
         {
-            int damage = playerFighter.getBlock();
+            int damage = fighter.getBlock();
 
-            VulnerableAttack(damage); 
+            VulnerableAttack(damage);
 
-            target.TakeDamage(damage);
+            if (target != null)
+                target.TakeDamage(damage);
         }
 
         private void Entrench()
         {
-            playerFighter.AddBlock(playerFighter.getBlock());
+            fighter.AddBlock(fighter.getBlock());
         }
 
         private void ApplyBuff(Buff.Type t)
         {
-            target.AddBuff(t, card.GetBuffAmount());
+            if (target != null)
+                target.AddBuff(t, card.GetBuffAmount());
         }
 
         private void ApplyBuffToSelf(Buff.Type t)
         {
-            playerFighter.AddBuff(t, card.GetBuffAmount());
+            fighter.AddBuff(t, card.GetBuffAmount());
         }
 
         private void PerformBlock()
         {
-            playerFighter.AddBlock(card.GetCardEffectAmount());
+            fighter.AddBlock(card.GetCardEffectAmount());
         }
     }
 }

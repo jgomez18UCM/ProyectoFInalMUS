@@ -20,17 +20,25 @@ namespace Combat
         [SerializeField] int maxEnergy;
 
         [SerializeField] Fighter fighter;
+        
+        Fighter target;
 
         CardUI chosenCard;
-        CardUI auxiliarCard; 
+        CardUI auxiliarCard;
+
+        CardActions cardActions; 
 
         int drawAmount;
         int energy;
 
         private void Start()
         {
+            cardActions = this.gameObject.GetComponent<CardActions>(); 
+
             chosenCard = new CardUI();
-            auxiliarCard = new CardUI(); 
+            auxiliarCard = new CardUI();
+
+            target = new Fighter(); 
 
             drawAmount = 5;
 
@@ -89,8 +97,12 @@ namespace Combat
             auxiliarCard.gameObject.SetActive(true);
         }
 
+        public void SetTarget(Fighter t) { target = t; }
+
         public void PlayCard(CardUI cardUI)
         {
+            cardActions.PerformAction(cardUI.GetCard(), target);
+
             energy -= cardUI.GetCard().GetCardCost();
             energyText.text = energy.ToString();
 

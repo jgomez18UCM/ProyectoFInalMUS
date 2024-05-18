@@ -6,51 +6,35 @@ using UnityEngine;
 
 namespace Combat
 {
-    public struct EnemyAction
-    {
-        public IntentType intentType;
-        public enum IntentType { Attack, Block, Buff, Debuff }
-
-        public int chance;
-        public int amount;
-        public int debuffAmount;
-
-        public Buff.Type buffType;
-
-        public Sprite icon;
-    }
-
-
     public class Enemy : MonoBehaviour
     {
         [SerializeField] Image intentIcon;
         [SerializeField] Text intentAmount;
 
-        List<EnemyAction> enemyActions;
+        [SerializeField] List<EnemyAction> enemyActions;
+
         List<EnemyAction> turns;
         
         int turnNumber;
-        
-        bool shuffle;
 
         Fighter player;
         Fighter enemy;
 
         private void Start()
         {
+            turnNumber = 0;
+
             turns = new List<EnemyAction>();
 
-            enemy = GetComponent<Fighter>();
+            enemy = this.gameObject.GetComponent<Fighter>();
 
-            if (shuffle)
-                GenerateTurns();
+            GenerateTurns();
         }
 
 
         private void LoadEnemy()
         {
-            if (shuffle)
-                GenerateTurns();
+            GenerateTurns();
         }
 
 
@@ -88,6 +72,8 @@ namespace Combat
                 for (int i = 0; i < enemiesArray.chance; i++)
                     turns.Add(enemiesArray);
             }
+
+            turns.Shuffle();
         }
 
         private IEnumerator AttackPlayer()

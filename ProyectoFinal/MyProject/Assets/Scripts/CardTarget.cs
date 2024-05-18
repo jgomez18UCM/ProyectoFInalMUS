@@ -4,27 +4,28 @@ namespace Combat
 {
     public class CardTarget : MonoBehaviour
     {
-        Player player; 
+        [SerializeField] Player player; 
+
         Fighter enemy;
 
         private void Awake()
         {
-            player = GetComponent<Player>(); 
-            enemy = GetComponent<Fighter>();
+            enemy = this.gameObject.GetComponent<Fighter>();
         }
 
         public void PointerEnter()
         {
-            if (enemy == null)
-                enemy = GetComponent<Fighter>();
-
-            if (player.GetChosenCard() != null && 
+            if (player.GetChosenCard() != null &&
                 player.GetChosenCard().GetCard().getCardType() == Card.CardType.Attack)
-                player.GetChosenCard().GetCard().SetCardTarget(Card.CardTarget.Enemy);
+            {
+                player.SetTarget(enemy);
+            }
+
         }
+
         public void PointerExit()
         {
-            player.GetChosenCard().GetCard().getCardTarget(); 
+            player.SetTarget(null);
         }
     }
 }
