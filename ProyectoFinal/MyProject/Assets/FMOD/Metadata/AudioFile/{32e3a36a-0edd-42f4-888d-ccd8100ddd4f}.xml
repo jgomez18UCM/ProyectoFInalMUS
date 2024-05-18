@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{32e3a36a-0edd-42f4-888d-ccd8100ddd4f}">
+		<property name="assetPath">
+			<value>Tema proyecto final v0 violin.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>120.18938775510205</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec60707e-b7ec-4b03-bf77-066d23a04644}</destination>
+		</relationship>
+	</object>
+</objects>
