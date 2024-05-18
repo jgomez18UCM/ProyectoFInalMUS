@@ -111,27 +111,31 @@ public class AudioLevelManager : MonoBehaviour
     {
         for (int i = 0; i < blocks.Length; i++)
         {
-            if (!blocks[i].activeInHierarchy)
+            if (blocks[i] != null)
             {
-                if (!tracksInfo[i].muted)
-                {
-                    tracksInfo[i].muted = true;
-                    tracksInfo[i].instrument.setVolume(0);
-                    Debug.Log(blocks[i] + " muteado");
-                }
+                    if (!blocks[i].activeInHierarchy)
+                    {
+                        if (!tracksInfo[i].muted)
+                        {
+                            tracksInfo[i].muted = true;
+                            tracksInfo[i].instrument.setVolume(0);
+                            Debug.Log(blocks[i] + " muteado");
+                        }
 
-                
-            }
-            else
-            {
-                if (tracksInfo[i].muted)
-                {
-                    tracksInfo[i].muted = false;
-                    Debug.Log(blocks[i] + " desmuteado");
-                    tracksInfo[i].instrument.setVolume(volumen);
-                }
 
-                
+                    }
+
+                    else
+                    {
+                        if (tracksInfo[i].muted)
+                        {
+                            tracksInfo[i].muted = false;
+                            Debug.Log(blocks[i] + " desmuteado");
+                            tracksInfo[i].instrument.setVolume(volumen);
+                        }
+
+
+                    }
             }
         }
     }

@@ -68,7 +68,7 @@ namespace Combat
         {
             int damage = card.GetCardEffectAmount() + fighter.getWeak().value;
 
-            VulnerableAttack(damage);
+            damage = VulnerableAttack(damage);
 
             if (target != null)
                 target.TakeDamage(damage);
@@ -78,7 +78,7 @@ namespace Combat
         {
             int damage = card.GetCardEffectAmount() + (fighter.getStrength().value * 3);
 
-            VulnerableAttack(damage);
+            damage = VulnerableAttack(damage);
 
             if (target != null)
                 target.TakeDamage(damage);
@@ -96,7 +96,7 @@ namespace Combat
         {
             int damage = fighter.getBlock();
 
-            VulnerableAttack(damage);
+            damage =VulnerableAttack(damage);
 
             if (target != null)
                 target.TakeDamage(damage);

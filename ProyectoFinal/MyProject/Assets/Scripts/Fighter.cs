@@ -8,6 +8,10 @@ namespace Combat
         [SerializeField] int maxHealth;
         [SerializeField] HealthBar healthBar;
 
+        [SerializeField] Image vulnerableIcon;
+        [SerializeField] Image strongIcon;
+        [SerializeField] Image weakIcon;
+
         Buff vulnerable;
         Buff weak;
         Buff strong;
@@ -15,17 +19,22 @@ namespace Combat
         int currentHealth;
         int currentBlock;
 
-        private void Awake()
-        {
-            currentHealth = maxHealth;
-            currentBlock = 0; 
-        }
-
         private void Start()
         {
+            currentHealth = maxHealth;
+            currentBlock = 0;
+
             healthBar.SetHealthValue(currentHealth); 
 
             healthBar.DisplayHealth(currentHealth);
+
+            vulnerableIcon.sprite = vulnerable.icon;
+            strongIcon.sprite = strong.icon;
+            weakIcon.sprite = weak.icon;
+
+            vulnerableIcon.enabled = false;
+            strongIcon.enabled = false;
+            weakIcon.enabled = false; 
         }
 
         public void TakeDamage(int amount)
@@ -81,13 +90,28 @@ namespace Combat
         public void AddBuff(Buff.Type type, int amount)
         {
             if (type == Buff.Type.vulnerable)
+            {
                 vulnerable.value += amount;
 
+                if (!vulnerableIcon.enabled)
+                    vulnerableIcon.enabled = true; 
+            }
+
             else if (type == Buff.Type.weak)
+            {
                 weak.value += amount;
 
+                if (!weakIcon.enabled)
+                    weakIcon.enabled = true;
+            }
+
             else if (type == Buff.Type.strong)
+            {
                 strong.value += amount;
+
+                if (!strongIcon.enabled)
+                    strongIcon.enabled = true;
+            }
         }
 
         public Buff getWeak() { return weak; }
@@ -104,10 +128,20 @@ namespace Combat
         public void EvaluateBuffsAtTurnEnd()
         {
             if (vulnerable.value > 0)
+            {
                 vulnerable.value -= 1;
 
+                if (vulnerable.value == 0)
+                    vulnerableIcon.enabled = false;
+            }
+
             else if (weak.value > 0)
+            {
                 weak.value -= 1;
+
+                if (weak.value == 0)
+                    weakIcon.enabled = false;
+            }
         }
         public void ResetBuffs()
         {
