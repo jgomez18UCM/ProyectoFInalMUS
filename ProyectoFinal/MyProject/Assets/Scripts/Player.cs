@@ -32,7 +32,7 @@ namespace Combat
             chosenCard = new CardUI();
             auxiliarCard = new CardUI(); 
 
-            drawAmount = 2;
+            drawAmount = 5;
 
             discardPile = new List<Card>();
             cardsInHand = new List<Card>();
