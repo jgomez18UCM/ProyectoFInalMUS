@@ -13,11 +13,12 @@ namespace Combat
 
         [SerializeField] List<EnemyAction> enemyActions;
 
+        [SerializeField] Fighter player;
+
         List<EnemyAction> turns;
         
         int turnNumber;
 
-        Fighter player;
         Fighter enemy;
 
         private void Start()
@@ -120,7 +121,7 @@ namespace Combat
             if (player == null)
                 LoadEnemy();
 
-            player.AddBuff(t, turns[turnNumber].debuffAmount);
+            //player.AddBuff(t, turns[turnNumber].debuffAmount);
         }
 
 

@@ -595,6 +595,7 @@ MonoBehaviour:
   enemyActions:
   - {fileID: 11400000, guid: f3efa5addb370fa4ca84cb95ff62a0fa, type: 2}
   - {fileID: 11400000, guid: 589c8d1ac3c50334ba21e826c278b83d, type: 2}
+  player: {fileID: 564492150}
 --- !u!114 &125747702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5507,6 +5508,7 @@ MonoBehaviour:
   enemyActions:
   - {fileID: 11400000, guid: 589c8d1ac3c50334ba21e826c278b83d, type: 2}
   - {fileID: 11400000, guid: 589c8d1ac3c50334ba21e826c278b83d, type: 2}
+  player: {fileID: 564492150}
 --- !u!114 &1416118717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6521,6 +6523,7 @@ MonoBehaviour:
   enemyActions:
   - {fileID: 11400000, guid: f3efa5addb370fa4ca84cb95ff62a0fa, type: 2}
   - {fileID: 11400000, guid: f3efa5addb370fa4ca84cb95ff62a0fa, type: 2}
+  player: {fileID: 564492150}
 --- !u!114 &1643952511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7150,6 +7153,7 @@ MonoBehaviour:
   enemyActions:
   - {fileID: 11400000, guid: f3efa5addb370fa4ca84cb95ff62a0fa, type: 2}
   - {fileID: 11400000, guid: 589c8d1ac3c50334ba21e826c278b83d, type: 2}
+  player: {fileID: 564492150}
 --- !u!114 &1786721632
 MonoBehaviour:
   m_ObjectHideFlags: 0
