@@ -11,12 +11,10 @@ namespace Combat
         [SerializeField] Text blockText;
         [SerializeField] Text healthText;
 
-        Slider healthSlider;
+        [SerializeField] Slider healthSlider;
 
         private void Start()
         {
-            healthSlider = this.gameObject.GetComponent<Slider>();
-
             ActiveBlockElements(false);
         }
 
