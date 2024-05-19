@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{cecf4bbe-7dbe-4275-a06d-4717bd800338}">
+	<object class="AudioFile" id="{0eb4217f-57db-4a69-aeda-ff1ae878e18d}">
 		<property name="assetPath">
-			<value>Tema proyecto final v0 piano.mp3</value>
+			<value>Song/Tema proyecto final v0 bateria.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
