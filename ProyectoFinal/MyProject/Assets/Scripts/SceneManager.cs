@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
 using System;
+using static UnityEngine.EventSystems.EventTrigger;
 
 namespace Combat
 {
@@ -44,14 +45,6 @@ namespace Combat
 
         public void ChangeTurn()
         {
-            for (int i = 0; i < enemiesArray.Count;)
-            {
-                if (enemiesArray[i] == null)
-                    enemiesArray.Remove(enemiesArray[i]);
-                else
-                    i++;
-            }
-
             if (turn == Turn.Player)
             {
                 player.DiscardHand();
@@ -59,11 +52,16 @@ namespace Combat
                 turn = Turn.Enemy;
                 endTurnButton.enabled = false;
 
-                foreach (Enemy e in enemiesArray)
+                for (int i = 0; i < enemiesArray.Count;)
                 {
-                    e.GetFigtherEnemy().setBlock(0);
+                    if (enemiesArray[i].enabled)
+                    {
+                        Enemy e = enemiesArray[i].GetComponent<Enemy>();
 
-                    e.GetFigtherEnemy().getHealthBar().DisplayBlock(0);
+                        e.GetFigtherEnemy().setBlock(0);
+
+                        e.GetFigtherEnemy().getHealthBar().DisplayBlock(0);
+                    }
                 }
 
                 player.GetFigther().EvaluateBuffsAtTurnEnd();
@@ -72,8 +70,15 @@ namespace Combat
 
             else
             {
-                foreach (Enemy e in enemiesArray)
-                    e.DisplayIntent();
+                for (int i = 0; i < enemiesArray.Count;)
+                {
+                    if (enemiesArray[i].enabled)
+                    {
+                        Enemy e = enemiesArray[i].GetComponent<Enemy>();
+
+                        e.DisplayIntent();
+                    }
+                }
 
                 turn = Turn.Player;
 
@@ -95,8 +100,15 @@ namespace Combat
 
             yield return new WaitForSeconds(1.5f);
 
-            foreach (Enemy enemy in enemiesArray)
-                enemy.TakeTurn();
+            for (int i = 0; i < enemiesArray.Count;)
+            {
+                if (enemiesArray[i].enabled)
+                {
+                    Enemy e = enemiesArray[i].GetComponent<Enemy>();
+
+                    e.TakeTurn();
+                }
+            }
 
             ChangeTurn();
         }

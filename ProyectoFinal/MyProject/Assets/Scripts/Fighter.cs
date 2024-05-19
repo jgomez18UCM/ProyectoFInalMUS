@@ -12,6 +12,8 @@ namespace Combat
         [SerializeField] Image strongIcon;
         [SerializeField] Image weakIcon;
 
+        [SerializeField] bool isEnemy; 
+
         EnemyAudio enemyAudio = null;
 
         Buff vulnerable;
@@ -39,6 +41,7 @@ namespace Combat
             weakIcon.enabled = false;
 
             enemyAudio = GetComponent<EnemyAudio>();
+
             if (enemyAudio != null)
             {
                 enemyAudio.SetAlive(true);
@@ -59,6 +62,10 @@ namespace Combat
                 {
                     enemyAudio.SetAlive(false);
                 }
+
+                if (isEnemy)
+                    this.gameObject.GetComponent<Enemy>().DissapearBody(); 
+
                gameObject.SetActive(false);
             }
         }
@@ -75,11 +82,6 @@ namespace Combat
             currentBlock += amount;
 
             healthBar.DisplayBlock(currentBlock);
-        }
-
-        private void Die()
-        {
-            this.gameObject.SetActive(false);
         }
 
         private int BlockDamage(int amount)
@@ -109,6 +111,7 @@ namespace Combat
 
                 if (!vulnerableIcon.enabled)
                     vulnerableIcon.enabled = true;
+
                 if (enemyAudio != null)
                 {
                     enemyAudio.SetDebuffed(true);
@@ -188,6 +191,7 @@ namespace Combat
             currentBlock = 0;
 
             healthBar.DisplayBlock(0);
+
             if (enemyAudio != null)
             {
                 enemyAudio.SetDebuffed(false);

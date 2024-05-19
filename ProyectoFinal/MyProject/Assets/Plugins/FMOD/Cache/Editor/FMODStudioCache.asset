@@ -15,30 +15,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank A.assets.bank
   Name: Bank A.assets
   StudioPath: bank:/Queen/Bank A.assets
-  lastModified: 638516639031039141
+  lastModified: 638508643972302446
   FileSizes:
   - Name: Desktop
     Value: 1621536
-  Exists: 1
---- !u!114 &-8444128932109885530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank G.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bank G.assets.bank
-  Name: Bank G.assets
-  StudioPath: bank:/Song/Bank G.assets
-  lastModified: 638516639171529072
-  FileSizes:
-  - Name: Desktop
-    Value: 873344
   Exists: 1
 --- !u!114 &-8297453688405801839
 MonoBehaviour:
@@ -110,7 +90,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Guitar.bank
   Name: Guitar
   StudioPath: bank:/Bamboleo/Guitar
-  lastModified: 638516638905201646
+  lastModified: 638508625244416523
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -130,7 +110,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Piano.bank
   Name: Piano
   StudioPath: bank:/Bamboleo/Piano
-  lastModified: 638516638944351313
+  lastModified: 638508625245542003
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -190,34 +170,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Clarinet.bank
   Name: Clarinet
   StudioPath: bank:/Bamboleo/Clarinet
-  lastModified: 638516638886902222
+  lastModified: 638508625243789279
   FileSizes:
   - Name: Desktop
     Value: 1728
-  Exists: 1
---- !u!114 &-6836273792859641212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Song_Piano/Debuff
-  m_EditorClassIdentifier: 
-  Name: Debuff
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 19102136
-    data2: 4147847944
-  Type: 1
-  IsGlobal: 0
-  Labels: []
   Exists: 1
 --- !u!114 &-6736519802206327386
 MonoBehaviour:
@@ -246,26 +202,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
---- !u!114 &-6326820190867395065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank H.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bank H.bank
-  Name: Bank H
-  StudioPath: bank:/Song/Bank H
-  lastModified: 638516639171611156
-  FileSizes:
-  - Name: Desktop
-    Value: 2888
-  Exists: 1
 --- !u!114 &-6050676106304618258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +339,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank B.bank
   Name: Bank B
   StudioPath: bank:/Queen/Bank B
-  lastModified: 638516639031236403
+  lastModified: 638508643972474622
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -435,30 +371,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
---- !u!114 &-5019849525617037918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Song_Drums/Alive
-  m_EditorClassIdentifier: 
-  Name: Alive
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 812716319
-    data2: 3054412263
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &-4534463553655235939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,7 +413,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Jazz_Guitar.assets.bank
   Name: Jazz_Guitar.assets
   StudioPath: bank:/Bamboleo/Jazz_Guitar.assets
-  lastModified: 638516638944150609
+  lastModified: 638508625245416633
   FileSizes:
   - Name: Desktop
     Value: 595328
@@ -684,30 +596,6 @@ MonoBehaviour:
   - WasabiOff
   - WasabiOn
   Exists: 1
---- !u!114 &-3378649329714960263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Song_Drums/Debuff
-  m_EditorClassIdentifier: 
-  Name: Debuff
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 19102136
-    data2: 4147847944
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &-3363738452273660055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,30 +658,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Base.assets.bank
   Name: Base.assets
   StudioPath: bank:/Bamboleo/Base.assets
-  lastModified: 638516638886694442
+  lastModified: 638508625243633455
   FileSizes:
   - Name: Desktop
     Value: 1910272
-  Exists: 1
---- !u!114 &-2669174241616706743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank F.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bank F.assets.bank
-  Name: Bank F.assets
-  StudioPath: bank:/Song/Bank F.assets
-  lastModified: 638516639149440854
-  FileSizes:
-  - Name: Desktop
-    Value: 1540768
   Exists: 1
 --- !u!114 &-2518734652059102836
 MonoBehaviour:
@@ -830,7 +698,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Clarinet.assets.bank
   Name: Clarinet.assets
   StudioPath: bank:/Bamboleo/Clarinet.assets
-  lastModified: 638516638905002625
+  lastModified: 638508625244270508
   FileSizes:
   - Name: Desktop
     Value: 620608
@@ -850,7 +718,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Piano.assets.bank
   Name: Piano.assets
   StudioPath: bank:/Bamboleo/Piano.assets
-  lastModified: 638516638962279511
+  lastModified: 638508625245811324
   FileSizes:
   - Name: Desktop
     Value: 608544
@@ -897,7 +765,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Jazz_Guitar.bank
   Name: Jazz_Guitar
   StudioPath: bank:/Bamboleo/Jazz_Guitar
-  lastModified: 638516638925862164
+  lastModified: 638508625245044018
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -1043,35 +911,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 858368
   Exists: 1
---- !u!114 &-906081034532992393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Song/Song_Piano
-  m_EditorClassIdentifier: 
-  Path: event:/Song/Song_Piano
-  Guid:
-    Data1: -1907471896
-    Data2: 1273728299
-    Data3: 267269287
-    Data4: 2088974348
-  Banks:
-  - {fileID: 506892557692333267}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 6520310358213353909}
-  - {fileID: -6836273792859641212}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-429575887173251047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,7 +926,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank B.assets.bank
   Name: Bank B.assets
   StudioPath: bank:/Queen/Bank B.assets
-  lastModified: 638516639053566116
+  lastModified: 638508643972902787
   FileSizes:
   - Name: Desktop
     Value: 1483296
@@ -1157,14 +996,6 @@ MonoBehaviour:
   - {fileID: 3678407560616636145}
   - {fileID: 5620912600335793804}
   - {fileID: 7945548532695094877}
-  - {fileID: 7303790772399232995}
-  - {fileID: 3097368481500277994}
-  - {fileID: -2669174241616706743}
-  - {fileID: 506892557692333267}
-  - {fileID: -8444128932109885530}
-  - {fileID: 2323862218210770049}
-  - {fileID: 5329921087481228116}
-  - {fileID: -6326820190867395065}
   EditorEvents:
   - {fileID: 642748401288917472}
   - {fileID: -8081348557634010438}
@@ -1178,10 +1009,6 @@ MonoBehaviour:
   - {fileID: 6709145176630888245}
   - {fileID: -5679088519428757467}
   - {fileID: -2360833476313615030}
-  - {fileID: 5046657691037178780}
-  - {fileID: -906081034532992393}
-  - {fileID: 8830859482232097654}
-  - {fileID: 1269492566436457734}
   EditorParameters:
   - {fileID: -3392670945988973686}
   - {fileID: 2795877709736717952}
@@ -1189,7 +1016,7 @@ MonoBehaviour:
   - {fileID: 7498288023045540898}
   StringsBanks:
   - {fileID: 836779227010602656}
-  cacheTime: 638516639196833878
+  cacheTime: 638508643974124131
   cacheVersion: 131616
 --- !u!114 &32991488064898138
 MonoBehaviour:
@@ -1233,7 +1060,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Base.bank
   Name: Base
   StudioPath: bank:/Bamboleo/Base
-  lastModified: 638516638854231092
+  lastModified: 638508625243135868
   FileSizes:
   - Name: Desktop
     Value: 1762
@@ -1265,26 +1092,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
---- !u!114 &506892557692333267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank F.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bank F.bank
-  Name: Bank F
-  StudioPath: bank:/Song/Bank F
-  lastModified: 638516639123918889
-  FileSizes:
-  - Name: Desktop
-    Value: 2888
-  Exists: 1
 --- !u!114 &598291802945165223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,7 +1158,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank C.assets.bank
   Name: Bank C.assets
   StudioPath: bank:/Queen/Bank C.assets
-  lastModified: 638516639078035412
+  lastModified: 638508643973583057
   FileSizes:
   - Name: Desktop
     Value: 2020128
@@ -1398,10 +1205,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bamboleo.strings.bank
   Name: Bamboleo.strings
   StudioPath: bank:/FullTracks/Bamboleo.strings
-  lastModified: 638516639007641210
+  lastModified: 638508643971643688
   FileSizes:
   - Name: Desktop
-    Value: 2984
+    Value: 2398
   Exists: 1
 --- !u!114 &912033140130443167
 MonoBehaviour:
@@ -1445,7 +1252,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Queen/Bank A
-  lastModified: 638516639007832868
+  lastModified: 638508643971807452
   FileSizes:
   - Name: Desktop
     Value: 1442
@@ -1474,35 +1281,6 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &1269492566436457734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Song/Song_Flute
-  m_EditorClassIdentifier: 
-  Path: event:/Song/Song_Flute
-  Guid:
-    Data1: -983737578
-    Data2: 1287353569
-    Data3: -1670164591
-    Data4: -76922991
-  Banks:
-  - {fileID: -6326820190867395065}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 5614956914905641901}
-  - {fileID: 4202599773469006563}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1632,50 +1410,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 38799
---- !u!114 &2089849268682415503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Song_Violin/Debuff
-  m_EditorClassIdentifier: 
-  Name: Debuff
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 19102136
-    data2: 4147847944
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &2323862218210770049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank G.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bank G.bank
-  Name: Bank G
-  StudioPath: bank:/Song/Bank G
-  lastModified: 638516639149511057
-  FileSizes:
-  - Name: Desktop
-    Value: 2888
-  Exists: 1
 --- !u!114 &2377546114600116917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,7 +1445,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Accordion.assets.bank
   Name: Accordion.assets
   StudioPath: bank:/Bamboleo/Accordion.assets
-  lastModified: 638516638853965069
+  lastModified: 638508625242992684
   FileSizes:
   - Name: Desktop
     Value: 710144
@@ -1779,26 +1513,6 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 620608
-  Exists: 1
---- !u!114 &3097368481500277994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank E.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bank E.bank
-  Name: Bank E
-  StudioPath: bank:/Song/Bank E
-  lastModified: 638516639097796917
-  FileSizes:
-  - Name: Desktop
-    Value: 2888
   Exists: 1
 --- !u!114 &3139315459992490623
 MonoBehaviour:
@@ -1909,7 +1623,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Soft_Sax.bank
   Name: Soft_Sax
   StudioPath: bank:/Bamboleo/Soft_Sax
-  lastModified: 638516638962465704
+  lastModified: 638508625245934704
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -1929,7 +1643,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank C.bank
   Name: Bank C
   StudioPath: bank:/Queen/Bank C
-  lastModified: 638516639053801349
+  lastModified: 638508643973091438
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -1981,30 +1695,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &4202599773469006563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Song_Flute/Alive
-  m_EditorClassIdentifier: 
-  Name: Alive
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 812716319
-    data2: 3054412263
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &5002906218602469229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2046,40 +1736,11 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Soft_Sax.assets.bank
   Name: Soft_Sax.assets
   StudioPath: bank:/Bamboleo/Soft_Sax.assets
-  lastModified: 638516638978948195
+  lastModified: 638508625246222080
   FileSizes:
   - Name: Desktop
     Value: 321504
   Exists: 1
---- !u!114 &5046657691037178780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Song/Song_Violin
-  m_EditorClassIdentifier: 
-  Path: event:/Song/Song_Violin
-  Guid:
-    Data1: 439678011
-    Data2: 1106972906
-    Data3: 827397764
-    Data4: -1270382855
-  Banks:
-  - {fileID: 3097368481500277994}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 2089849268682415503}
-  - {fileID: 7115497452119160460}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &5286367546986073305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2107,26 +1768,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 138604
---- !u!114 &5329921087481228116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank H.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bank H.assets.bank
-  Name: Bank H.assets
-  StudioPath: bank:/Song/Bank H.assets
-  lastModified: 638516639196833878
-  FileSizes:
-  - Name: Desktop
-    Value: 1478112
-  Exists: 1
 --- !u!114 &5584272788208647959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2154,30 +1795,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
---- !u!114 &5614956914905641901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Song_Flute/Debuff
-  m_EditorClassIdentifier: 
-  Name: Debuff
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 19102136
-    data2: 4147847944
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &5620912600335793804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2193,7 +1810,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank D.assets.bank
   Name: Bank D.assets
   StudioPath: bank:/Queen/Bank D.assets
-  lastModified: 638516639097726689
+  lastModified: 638508643974124131
   FileSizes:
   - Name: Desktop
     Value: 1230688
@@ -2213,7 +1830,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Accordion.bank
   Name: Accordion
   StudioPath: bank:/Bamboleo/Accordion
-  lastModified: 638516638833409586
+  lastModified: 638508625242625988
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -2285,30 +1902,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 138604
---- !u!114 &6520310358213353909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Song_Piano/Alive
-  m_EditorClassIdentifier: 
-  Name: Alive
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 812716319
-    data2: 3054412263
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &6530673495459198371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2378,54 +1971,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bamboleo.assets.bank
   Name: Bamboleo.assets
   StudioPath: bank:/FullTracks/Bamboleo.assets
-  lastModified: 638516639007611209
+  lastModified: 638508643971588028
   FileSizes:
   - Name: Desktop
     Value: 1958336
-  Exists: 1
---- !u!114 &7115497452119160460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Song_Violin/Alive
-  m_EditorClassIdentifier: 
-  Name: Alive
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 812716319
-    data2: 3054412263
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &7303790772399232995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bank E.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bank E.assets.bank
-  Name: Bank E.assets
-  StudioPath: bank:/Song/Bank E.assets
-  lastModified: 638516639123838640
-  FileSizes:
-  - Name: Desktop
-    Value: 1464064
   Exists: 1
 --- !u!114 &7427418176281610902
 MonoBehaviour:
@@ -2469,7 +2018,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bamboleo.bank
   Name: Bamboleo
   StudioPath: bank:/FullTracks/Bamboleo
-  lastModified: 638516638979215726
+  lastModified: 638508643970991222
   FileSizes:
   - Name: Desktop
     Value: 2956
@@ -2489,7 +2038,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank D.bank
   Name: Bank D
   StudioPath: bank:/Queen/Bank D
-  lastModified: 638516639078252548
+  lastModified: 638508643973789273
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -2580,7 +2129,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Guitar.assets.bank
   Name: Guitar.assets
   StudioPath: bank:/Bamboleo/Guitar.assets
-  lastModified: 638516638925661716
+  lastModified: 638508625244928711
   FileSizes:
   - Name: Desktop
     Value: 858368
@@ -2605,35 +2154,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1958336
   Exists: 1
---- !u!114 &8830859482232097654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Song/Song_Drums
-  m_EditorClassIdentifier: 
-  Path: event:/Song/Song_Drums
-  Guid:
-    Data1: 250011540
-    Data2: 1148048328
-    Data3: 1974991242
-    Data4: -1482335853
-  Banks:
-  - {fileID: 2323862218210770049}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -3378649329714960263}
-  - {fileID: -5019849525617037918}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &8995865127149845758
 MonoBehaviour:
   m_ObjectHideFlags: 0

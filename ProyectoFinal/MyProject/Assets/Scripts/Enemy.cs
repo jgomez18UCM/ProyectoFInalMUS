@@ -15,6 +15,8 @@ namespace Combat
 
         [SerializeField] Fighter player;
 
+        [SerializeField] GameObject self; 
+
         List<EnemyAction> turns;
         
         int turnNumber;
@@ -24,6 +26,8 @@ namespace Combat
         private void Start()
         {
             turnNumber = 0;
+
+            self.SetActive(true); 
 
             turns = new List<EnemyAction>();
 
@@ -40,6 +44,9 @@ namespace Combat
 
 
         public Fighter GetFigtherEnemy() { return enemy; }
+
+
+        public void DissapearBody() { self.SetActive(false); }
 
 
         public void TakeTurn()

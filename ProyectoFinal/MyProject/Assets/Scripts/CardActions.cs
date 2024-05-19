@@ -46,7 +46,7 @@ namespace Combat
                     AttackEnemy();
                     ApplyBuff(Buff.Type.weak);
                     break;
-                case "IronWave":
+                case "Ironwave":
                     AttackEnemy();
                     PerformBlock();
                     break;
