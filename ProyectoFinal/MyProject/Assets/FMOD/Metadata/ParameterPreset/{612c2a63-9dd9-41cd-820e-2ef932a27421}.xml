@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{612c2a63-9dd9-41cd-820e-2ef932a27421}">
+		<property name="name">
+			<value>Debuff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c6206a7f-d0ce-4db0-b820-5a037bd31210}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{614c24bf-6285-41b5-becb-816f350d3286}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{614c24bf-6285-41b5-becb-816f350d3286}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
