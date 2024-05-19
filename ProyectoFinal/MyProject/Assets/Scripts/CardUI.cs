@@ -42,7 +42,8 @@ namespace Combat
             if (player.GetEnergy() < card.GetCardCost())
                 return;
 
-            player.PlayCard(this);
+            if (player.GetTarget() != null)
+                player.PlayCard(this);
         }
     }
 }

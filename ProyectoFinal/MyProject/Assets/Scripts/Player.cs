@@ -99,6 +99,8 @@ namespace Combat
 
         public void SetTarget(Fighter t) { target = t; }
 
+        public Fighter GetTarget() { return target; }
+
         public void PlayCard(CardUI cardUI)
         {
             cardActions.PerformAction(cardUI.GetCard(), target);

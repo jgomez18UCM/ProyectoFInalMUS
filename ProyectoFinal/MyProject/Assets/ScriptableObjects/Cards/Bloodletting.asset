@@ -20,5 +20,5 @@ MonoBehaviour:
     cost: 1
     buff:
       type: 0
-      icon: {fileID: 21300102, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+      icon: {fileID: 0}
       value: 1
