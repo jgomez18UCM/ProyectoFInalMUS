@@ -128,7 +128,7 @@ namespace Combat
             if (player == null)
                 LoadEnemy();
 
-            //player.AddBuff(t, turns[turnNumber].debuffAmount);
+           player.AddBuff(t, turns[turnNumber].debuffAmount);
         }
 
 

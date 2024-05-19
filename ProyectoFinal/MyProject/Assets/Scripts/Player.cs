@@ -124,9 +124,9 @@ namespace Combat
         {
             foreach (Card card in cardsInHand)
             {
-                //cardsInHand.Remove(card);
-                //DiscardCard(card); 
+                DiscardCard(card); 
             }
+            cardsInHand.Clear();
         }
 
 

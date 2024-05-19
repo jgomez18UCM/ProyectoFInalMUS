@@ -58,13 +58,16 @@ namespace Combat
 
             if (currentHealth <= 0)
             {
+                currentHealth = 0;
                 if (enemyAudio != null)
                 {
                     enemyAudio.SetAlive(false);
                 }
 
                 if (isEnemy)
-                    this.gameObject.GetComponent<Enemy>().DissapearBody(); 
+                    this.gameObject.GetComponent<Enemy>().DissapearBody();
+                else
+                    GameManager.EndGame(false);
 
                gameObject.SetActive(false);
             }

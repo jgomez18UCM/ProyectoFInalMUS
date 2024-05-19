@@ -71,16 +71,6 @@ namespace Combat
                 target.TakeDamage(damage);
         }
 
-        private void AttackStrength()
-        {
-            int damage = card.GetCardEffectAmount() + (fighter.getStrength().value * 3);
-
-            damage = TotalDamage(damage);  
-
-            if (target != null)
-                target.TakeDamage(damage);
-        }
-
         private int TotalDamage(int damage)
         {
             damage = StrongAttack(damage);
@@ -108,10 +98,9 @@ namespace Combat
 
         private int StrongAttack(int damage)
         {
-            if (fighter.getStrength().value > 0)
-                damage += fighter.getStrength().value;
+            
+            return damage + fighter.getStrength().value;
 
-            return damage; 
         }
 
         private void BodySlam()

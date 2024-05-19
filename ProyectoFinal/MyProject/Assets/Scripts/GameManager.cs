@@ -19,9 +19,6 @@ namespace Combat
         public List<Card> playerDeck = new List<Card>();
         public List<Card> cardLibrary = new List<Card>();
 
-        //[SerializeField]
-        //StudioEventEmitter soundEffect;
-
         float puntuacionFinal = 0;
         public float getPuntuacionFinal() { return puntuacionFinal; }
         public void setPuntuacionFinal(float p) { puntuacionFinal = p; }
@@ -41,7 +38,6 @@ namespace Combat
         void Start()
         {
             RuntimeManager.StudioSystem.setParameterByName("Volumen", volume);
-
             //playerStatsUI = FindObjectOfType<PlayerStatsUI>();
         }
 
@@ -59,6 +55,19 @@ namespace Combat
         public void DisplayHealth(int healthAmount, int maxHealth)
         {
             //playerStatsUI.healthDisplayText.text = $"{healthAmount} / {maxHealth}";
+        }
+
+        public static void EndGame(bool win)
+        {
+            if (win)
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Scenes/Win");
+            else
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Scenes/GameOver");
+        }
+
+        public static void NewGame()
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Scenes/Levels/Nivel_1");
         }
     }
 }

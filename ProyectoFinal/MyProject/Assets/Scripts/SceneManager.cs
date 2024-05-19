@@ -52,17 +52,23 @@ namespace Combat
                 turn = Turn.Enemy;
                 endTurnButton.enabled = false;
 
-                for (int i = 0; i < enemiesArray.Count;)
+                int aliveEnemies = 0;
+                for (int i = 0; i < enemiesArray.Count; i++)
                 {
-                    if (enemiesArray[i].enabled)
+                    
+                    if (enemiesArray[i].gameObject.activeInHierarchy)
                     {
-                        Enemy e = enemiesArray[i].GetComponent<Enemy>();
+                        Enemy e = enemiesArray[i];
 
                         e.GetFigtherEnemy().setBlock(0);
 
                         e.GetFigtherEnemy().getHealthBar().DisplayBlock(0);
+                        aliveEnemies++;
                     }
+                    
                 }
+                if (aliveEnemies == 0)
+                    GameManager.EndGame(true);
 
                 player.GetFigther().EvaluateBuffsAtTurnEnd();
                 StartCoroutine(HandleEnemyTurn());
@@ -70,11 +76,11 @@ namespace Combat
 
             else
             {
-                for (int i = 0; i < enemiesArray.Count;)
+                for (int i = 0; i < enemiesArray.Count; i++)
                 {
-                    if (enemiesArray[i].enabled)
+                    if (enemiesArray[i].gameObject.activeInHierarchy)
                     {
-                        Enemy e = enemiesArray[i].GetComponent<Enemy>();
+                        Enemy e = enemiesArray[i];
 
                         e.DisplayIntent();
                     }
@@ -100,9 +106,9 @@ namespace Combat
 
             yield return new WaitForSeconds(1.5f);
 
-            for (int i = 0; i < enemiesArray.Count;)
+            for (int i = 0; i < enemiesArray.Count; i++)
             {
-                if (enemiesArray[i].enabled)
+                if (enemiesArray[i].gameObject.activeInHierarchy)
                 {
                     Enemy e = enemiesArray[i].GetComponent<Enemy>();
 
