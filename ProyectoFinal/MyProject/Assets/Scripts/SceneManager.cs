@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
 using System;
-using FMODUnity;
+
 using static UnityEngine.EventSystems.EventTrigger;
 
 namespace Combat
@@ -20,8 +20,6 @@ namespace Combat
         [SerializeField] GameObject[] enemies;
 
         [SerializeField] Text turnText;
-
-        [SerializeField] StudioEventEmitter HitSound;
 
         List<Enemy> enemiesArray;
 
@@ -127,9 +125,5 @@ namespace Combat
             player.GetFigther().ResetBuffs();
         }
 
-        public void PlayHitSound()
-        {
-            HitSound.Play();
-        }
     }
 }
