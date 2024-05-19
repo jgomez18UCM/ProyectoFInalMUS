@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd4887e5d3c123e498b53fdbe1435273, type: 3}
   m_Name: Clothesline
   m_EditorClassIdentifier: 
-  cardIcon: {fileID: 0}
+  cardIcon: {fileID: 21300000, guid: 3842f90548734ee4b9baa069e91c4413, type: 3}
   card:
     description: 6 Atq. y 2 Deb.
     name: Clothesline

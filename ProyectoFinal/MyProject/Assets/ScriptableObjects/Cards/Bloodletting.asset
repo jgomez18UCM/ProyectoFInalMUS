@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd4887e5d3c123e498b53fdbe1435273, type: 3}
   m_Name: Bloodletting
   m_EditorClassIdentifier: 
-  cardIcon: {fileID: 0}
+  cardIcon: {fileID: 21300000, guid: 8f06c85c8951a054da34f23c2319283e, type: 3}
   card:
     description: +2 Energia
     name: Bloodletting
