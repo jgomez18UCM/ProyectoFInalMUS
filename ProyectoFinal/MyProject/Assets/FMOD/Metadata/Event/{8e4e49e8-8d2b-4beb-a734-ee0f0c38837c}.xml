@@ -5,7 +5,7 @@
 			<value>Song_Piano</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{58c655aa-150c-4547-a6b9-42f22e0936bf}</destination>
@@ -114,7 +114,7 @@
 			<value>2</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{cecf4bbe-7dbe-4275-a06d-4717bd800338}</destination>
+			<destination>{5a74c697-52a7-4f77-a558-216fbab2e7a9}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{4786386e-8ace-402f-a0f0-d4017344bdae}">
@@ -137,7 +137,6 @@
 	<object class="MixerBusEffectChain" id="{76813ea5-0790-49e9-9008-35f764a193e9}">
 		<relationship name="effects">
 			<destination>{43603c6c-4457-46e8-915e-831f5d883f7f}</destination>
-			<destination>{6b7de2e3-cb40-4b2d-a1a6-6784be270980}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{53985034-372b-4d0a-834f-90563d618ee7}" />
@@ -158,7 +157,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{64c7de74-8f05-4ff0-9687-9b1375088256}" />
 	<object class="MixerBusFader" id="{43603c6c-4457-46e8-915e-831f5d883f7f}" />
-	<object class="SpatialiserEffect" id="{6b7de2e3-cb40-4b2d-a1a6-6784be270980}" />
 	<object class="AutomationCurve" id="{9f20fd2a-dce8-4fe0-b4f2-e8ab5e496708}">
 		<relationship name="parameter">
 			<destination>{01d572cb-3c40-4a9c-a9be-bf263783a7e0}</destination>

@@ -5,7 +5,7 @@
 			<value>Song_Violin</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{58c655aa-150c-4547-a6b9-42f22e0936bf}</destination>
@@ -117,7 +117,7 @@
 			<value>true</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{32e3a36a-0edd-42f4-888d-ccd8100ddd4f}</destination>
+			<destination>{97b9fb39-b1de-47a1-a607-0fde0b8143d5}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{52975ee7-76eb-462c-bd7f-5410a44683cf}">
@@ -140,7 +140,6 @@
 	<object class="MixerBusEffectChain" id="{920efdb7-3b4b-4a40-9a06-8177375007b5}">
 		<relationship name="effects">
 			<destination>{2496417a-108d-4abb-8aaa-e3d0e441a704}</destination>
-			<destination>{b4052dea-0679-4a00-9a32-0f426dbb68aa}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{43516610-8362-4557-91cd-ca16f84a8be3}" />
@@ -161,7 +160,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{ff3a36b9-99e0-4ab0-91f6-73efa0c28210}" />
 	<object class="MixerBusFader" id="{2496417a-108d-4abb-8aaa-e3d0e441a704}" />
-	<object class="SpatialiserEffect" id="{b4052dea-0679-4a00-9a32-0f426dbb68aa}" />
 	<object class="AutomationCurve" id="{4567de0f-ad00-4e9d-9f29-3a1fae4a90d7}">
 		<relationship name="parameter">
 			<destination>{01d572cb-3c40-4a9c-a9be-bf263783a7e0}</destination>
