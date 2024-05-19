@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank A.assets.bank
   Name: Bank A.assets
   StudioPath: bank:/Queen/Bank A.assets
-  lastModified: 638508643972302446
+  lastModified: 638517358530449419
   FileSizes:
   - Name: Desktop
     Value: 1621536
@@ -47,7 +47,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 138604
---- !u!114 &-8071615709113186093
+--- !u!114 &-7658920859363418999
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,37 +56,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Guitar.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Master
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Guitar.bank
-  Name: Guitar
-  StudioPath: bank:/Bamboleo/Guitar
-  lastModified: 638517393607773109
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
---- !u!114 &-7619734835102680978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Piano.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Piano.bank
-  Name: Piano
-  StudioPath: bank:/Bamboleo/Piano
-  lastModified: 638517393607918379
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
+  Path: event:/Master
+  Guid:
+    Data1: -805640997
+    Data2: 1096732024
+    Data3: -1052489301
+    Data4: -1572726927
+  Banks:
+  - {fileID: -6511275457884675962}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7432913968018722009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,26 +143,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 710144
   Exists: 1
---- !u!114 &-6857473938163774200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Clarinet.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Clarinet.bank
-  Name: Clarinet
-  StudioPath: bank:/Bamboleo/Clarinet
-  lastModified: 638517393607690829
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
 --- !u!114 &-6838978857469363067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +199,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
+--- !u!114 &-6511275457884675962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638517447771880434
+  FileSizes:
+  - Name: Desktop
+    Value: 1946
+  Exists: 1
 --- !u!114 &-6484948792815599139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +291,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 171786
+--- !u!114 &-5681660404889752460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank I.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank I.assets.bank
+  Name: Bank I.assets
+  StudioPath: bank:/Sounds/Bank I.assets
+  lastModified: 638517447772772117
+  FileSizes:
+  - Name: Desktop
+    Value: 7520
+  Exists: 1
 --- !u!114 &-5679088519428757467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +373,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank B.bank
   Name: Bank B
   StudioPath: bank:/Queen/Bank B
-  lastModified: 638508643972474622
+  lastModified: 638517358530519776
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -386,10 +393,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank E.assets.bank
   Name: Bank E.assets
   StudioPath: bank:/Song/Bank E.assets
-  lastModified: 638517391453702691
+  lastModified: 638517379829898547
   FileSizes:
   - Name: Desktop
-    Value: 1464096
+    Value: 1464064
   Exists: 1
 --- !u!114 &-5370376728877794181
 MonoBehaviour:
@@ -445,26 +452,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
---- !u!114 &-4430451526204347501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Jazz_Guitar.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Jazz_Guitar.assets.bank
-  Name: Jazz_Guitar.assets
-  StudioPath: bank:/Bamboleo/Jazz_Guitar.assets
-  lastModified: 638517393607848250
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
 --- !u!114 &-4377162296233553974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,7 +467,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank H.bank
   Name: Bank H
   StudioPath: bank:/Song/Bank H
-  lastModified: 638517391493103419
+  lastModified: 638517379879856479
   FileSizes:
   - Name: Desktop
     Value: 2614
@@ -683,7 +670,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
---- !u!114 &-2753462798253675655
+--- !u!114 &-2548778898582798241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -693,15 +680,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Base.assets.bank
+  m_Name: bank:/Bank J.assets.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Base.assets.bank
-  Name: Base.assets
-  StudioPath: bank:/Bamboleo/Base.assets
-  lastModified: 638517393607635597
+  Path: Assets/FMOD/Build/Desktop/Bank J.assets.bank
+  Name: Bank J.assets
+  StudioPath: bank:/Sounds/Bank J.assets
+  lastModified: 638517447773783654
   FileSizes:
   - Name: Desktop
-    Value: 494
+    Value: 20768
   Exists: 1
 --- !u!114 &-2518734652059102836
 MonoBehaviour:
@@ -723,7 +710,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 608544
   Exists: 1
---- !u!114 &-2499306120662323775
+--- !u!114 &-2289796741321459968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -733,55 +720,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Clarinet.assets.bank
+  m_Name: bank:/Bank I.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Clarinet.assets.bank
-  Name: Clarinet.assets
-  StudioPath: bank:/Bamboleo/Clarinet.assets
-  lastModified: 638517393607710935
+  Path: Assets/FMOD/Build/Desktop/Bank I.bank
+  Name: Bank I
+  StudioPath: bank:/Sounds/Bank I
+  lastModified: 638517447772261268
   FileSizes:
   - Name: Desktop
-    Value: 494
-  Exists: 1
---- !u!114 &-2433252336335327018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Piano.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Piano.assets.bank
-  Name: Piano.assets
-  StudioPath: bank:/Bamboleo/Piano.assets
-  lastModified: 638517393607942210
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
---- !u!114 &-2346121170126093555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Jazz_Guitar.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Jazz_Guitar.bank
-  Name: Jazz_Guitar
-  StudioPath: bank:/Bamboleo/Jazz_Guitar
-  lastModified: 638517393607833179
-  FileSizes:
-  - Name: Desktop
-    Value: 494
+    Value: 1442
   Exists: 1
 --- !u!114 &-2204014677543570488
 MonoBehaviour:
@@ -859,6 +806,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
+--- !u!114 &-1472572035719801976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank K.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank K.assets.bank
+  Name: Bank K.assets
+  StudioPath: bank:/Sounds/Bank K.assets
+  lastModified: 638517447774583014
+  FileSizes:
+  - Name: Desktop
+    Value: 37152
+  Exists: 1
 --- !u!114 &-1439375480188579535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,7 +888,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank G.bank
   Name: Bank G
   StudioPath: bank:/Song/Bank G
-  lastModified: 638517391475151384
+  lastModified: 638517379856373272
   FileSizes:
   - Name: Desktop
     Value: 2614
@@ -946,6 +913,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 858368
   Exists: 1
+--- !u!114 &-535835293302290897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/Lose
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/Lose
+  Guid:
+    Data1: -2130331384
+    Data2: 1165654125
+    Data3: -1585019501
+    Data4: -204279446
+  Banks:
+  - {fileID: 1374541743642964045}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4001
 --- !u!114 &-429575887173251047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,7 +955,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank B.assets.bank
   Name: Bank B.assets
   StudioPath: bank:/Queen/Bank B.assets
-  lastModified: 638508643972902787
+  lastModified: 638517358530721319
   FileSizes:
   - Name: Desktop
     Value: 1483296
@@ -1030,23 +1024,6 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 836779227010602656}
-  - {fileID: 2722120141542182776}
-  - {fileID: 5780656209723820677}
-  - {fileID: 7073209531241585926}
-  - {fileID: 7498288023045540898}
-  - {fileID: -2753462798253675655}
-  - {fileID: 71649529432319220}
-  - {fileID: -2499306120662323775}
-  - {fileID: -6857473938163774200}
-  - {fileID: 8630473387134906486}
-  - {fileID: -8071615709113186093}
-  - {fileID: -4430451526204347501}
-  - {fileID: -2346121170126093555}
-  - {fileID: -2433252336335327018}
-  - {fileID: -7619734835102680978}
-  - {fileID: 5005259732709212274}
-  - {fileID: 3589661649683859663}
   - {fileID: -9067025752017581196}
   - {fileID: 1007447075321394728}
   - {fileID: -429575887173251047}
@@ -1063,6 +1040,15 @@ MonoBehaviour:
   - {fileID: -1016662427672811789}
   - {fileID: 8697038723777163383}
   - {fileID: -4377162296233553974}
+  - {fileID: 7429149313000989039}
+  - {fileID: -5681660404889752460}
+  - {fileID: -2289796741321459968}
+  - {fileID: -2548778898582798241}
+  - {fileID: 335700027955455426}
+  - {fileID: -1472572035719801976}
+  - {fileID: 1374541743642964045}
+  - {fileID: 6612352761207146219}
+  - {fileID: -6511275457884675962}
   EditorEvents:
   - {fileID: -6736519802206327386}
   - {fileID: -3902102849671221409}
@@ -1072,14 +1058,18 @@ MonoBehaviour:
   - {fileID: -6838978857469363067}
   - {fileID: 7773351786289348844}
   - {fileID: -2163824740716556807}
+  - {fileID: 8542785880678427222}
+  - {fileID: 3120401613085649999}
+  - {fileID: -535835293302290897}
+  - {fileID: -7658920859363418999}
   EditorParameters:
   - {fileID: -3392670945988973686}
   - {fileID: 2795877709736717952}
   MasterBanks:
-  - {fileID: 7498288023045540898}
+  - {fileID: -6511275457884675962}
   StringsBanks:
-  - {fileID: 836779227010602656}
-  cacheTime: 638517393608114000
+  - {fileID: 7429149313000989039}
+  cacheTime: 638517447774583014
   cacheVersion: 131616
 --- !u!114 &32991488064898138
 MonoBehaviour:
@@ -1123,12 +1113,12 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank F.assets.bank
   Name: Bank F.assets
   StudioPath: bank:/Song/Bank F.assets
-  lastModified: 638517391474904753
+  lastModified: 638517379856287586
   FileSizes:
   - Name: Desktop
     Value: 1540768
   Exists: 1
---- !u!114 &71649529432319220
+--- !u!114 &335700027955455426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1138,15 +1128,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Base.bank
+  m_Name: bank:/Bank J.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Base.bank
-  Name: Base
-  StudioPath: bank:/Bamboleo/Base
-  lastModified: 638517393607615599
+  Path: Assets/FMOD/Build/Desktop/Bank J.bank
+  Name: Bank J
+  StudioPath: bank:/Sounds/Bank J
+  lastModified: 638517447772858465
   FileSizes:
   - Name: Desktop
-    Value: 494
+    Value: 1442
   Exists: 1
 --- !u!114 &480478868156060708
 MonoBehaviour:
@@ -1214,7 +1204,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank C.assets.bank
   Name: Bank C.assets
   StudioPath: bank:/Queen/Bank C.assets
-  lastModified: 638508643973583057
+  lastModified: 638517358531002580
   FileSizes:
   - Name: Desktop
     Value: 2020128
@@ -1246,26 +1236,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
---- !u!114 &836779227010602656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bamboleo.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bamboleo.strings.bank
-  Name: Bamboleo.strings
-  StudioPath: bank:/FullTracks/Bamboleo.strings
-  lastModified: 638517393608114000
-  FileSizes:
-  - Name: Desktop
-    Value: 2644
-  Exists: 1
 --- !u!114 &912033140130443167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1308,7 +1278,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Queen/Bank A
-  lastModified: 638508643971807452
+  lastModified: 638517358530243216
   FileSizes:
   - Name: Desktop
     Value: 1442
@@ -1355,10 +1325,30 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank G.assets.bank
   Name: Bank G.assets
   StudioPath: bank:/Song/Bank G.assets
-  lastModified: 638517391492874287
+  lastModified: 638517379879791051
   FileSizes:
   - Name: Desktop
-    Value: 873376
+    Value: 873344
+  Exists: 1
+--- !u!114 &1374541743642964045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank K.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Bank K.bank
+  Name: Bank K
+  StudioPath: bank:/Sounds/Bank K
+  lastModified: 638517447773848784
+  FileSizes:
+  - Name: Desktop
+    Value: 1442
   Exists: 1
 --- !u!114 &1453511317955194368
 MonoBehaviour:
@@ -1530,26 +1520,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1728
   Exists: 1
---- !u!114 &2722120141542182776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Accordion.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Accordion.assets.bank
-  Name: Accordion.assets
-  StudioPath: bank:/Bamboleo/Accordion.assets
-  lastModified: 638517393607560732
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
 --- !u!114 &2756419707294492967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1638,6 +1608,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 620608
   Exists: 1
+--- !u!114 &3120401613085649999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/Win
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/Win
+  Guid:
+    Data1: -2025918681
+    Data2: 1182236849
+    Data3: 1964880777
+    Data4: 102586828
+  Banks:
+  - {fileID: 335700027955455426}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3784
 --- !u!114 &3139315459992490623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1732,26 +1729,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
---- !u!114 &3589661649683859663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Soft_Sax.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Soft_Sax.bank
-  Name: Soft_Sax
-  StudioPath: bank:/Bamboleo/Soft_Sax
-  lastModified: 638517393607984069
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
 --- !u!114 &3678407560616636145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,7 +1744,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank C.bank
   Name: Bank C
   StudioPath: bank:/Queen/Bank C
-  lastModified: 638508643973091438
+  lastModified: 638517358530791738
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -1787,7 +1764,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank E.bank
   Name: Bank E
   StudioPath: bank:/Song/Bank E
-  lastModified: 638517391432483618
+  lastModified: 638517379803176481
   FileSizes:
   - Name: Desktop
     Value: 2614
@@ -1865,26 +1842,6 @@ MonoBehaviour:
   - WasabiOff
   - WasabiOn
   Exists: 1
---- !u!114 &5005259732709212274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Soft_Sax.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Soft_Sax.assets.bank
-  Name: Soft_Sax.assets
-  StudioPath: bank:/Bamboleo/Soft_Sax.assets
-  lastModified: 638517393607998142
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
 --- !u!114 &5123537194329484729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1951,30 +1908,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank D.assets.bank
   Name: Bank D.assets
   StudioPath: bank:/Queen/Bank D.assets
-  lastModified: 638508643974124131
+  lastModified: 638517358531411622
   FileSizes:
   - Name: Desktop
     Value: 1230688
-  Exists: 1
---- !u!114 &5780656209723820677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Accordion.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Accordion.bank
-  Name: Accordion
-  StudioPath: bank:/Bamboleo/Accordion
-  lastModified: 638517393607530771
-  FileSizes:
-  - Name: Desktop
-    Value: 494
   Exists: 1
 --- !u!114 &5899247443030914015
 MonoBehaviour:
@@ -2070,6 +2007,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
+--- !u!114 &6612352761207146219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.assets.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/Build/Desktop/Master.assets.bank
+  Name: Master.assets
+  StudioPath: bank:/Master.assets
+  lastModified: 638517447771905521
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
 --- !u!114 &6709145176630888245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2112,30 +2069,10 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank F.bank
   Name: Bank F
   StudioPath: bank:/Song/Bank F
-  lastModified: 638517391453935712
+  lastModified: 638517379829973662
   FileSizes:
   - Name: Desktop
     Value: 2614
-  Exists: 1
---- !u!114 &7073209531241585926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bamboleo.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bamboleo.assets.bank
-  Name: Bamboleo.assets
-  StudioPath: bank:/FullTracks/Bamboleo.assets
-  lastModified: 638517393608098962
-  FileSizes:
-  - Name: Desktop
-    Value: 494
   Exists: 1
 --- !u!114 &7117444030419343033
 MonoBehaviour:
@@ -2188,7 +2125,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
---- !u!114 &7498288023045540898
+--- !u!114 &7429149313000989039
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2198,15 +2135,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bamboleo.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Bamboleo.bank
-  Name: Bamboleo
-  StudioPath: bank:/FullTracks/Bamboleo
-  lastModified: 638517393608074325
+  Path: Assets/FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638517447771935625
   FileSizes:
   - Name: Desktop
-    Value: 1408
+    Value: 2446
   Exists: 1
 --- !u!114 &7773351786289348844
 MonoBehaviour:
@@ -2252,7 +2189,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank D.bank
   Name: Bank D
   StudioPath: bank:/Queen/Bank D
-  lastModified: 638508643973789273
+  lastModified: 638517358531219816
   FileSizes:
   - Name: Desktop
     Value: 1728
@@ -2328,6 +2265,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 256170
+--- !u!114 &8542785880678427222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sounds/Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Sounds/Hit
+  Guid:
+    Data1: 1159397490
+    Data2: 1318844302
+    Data3: -248425804
+    Data4: -87760460
+  Banks:
+  - {fileID: -2289796741321459968}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 698
 --- !u!114 &8612049590745066918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2352,26 +2316,6 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &8630473387134906486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Guitar.assets.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/Build/Desktop/Guitar.assets.bank
-  Name: Guitar.assets
-  StudioPath: bank:/Bamboleo/Guitar.assets
-  lastModified: 638517393607793087
-  FileSizes:
-  - Name: Desktop
-    Value: 494
-  Exists: 1
 --- !u!114 &8697038723777163383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2387,7 +2331,7 @@ MonoBehaviour:
   Path: Assets/FMOD/Build/Desktop/Bank H.assets.bank
   Name: Bank H.assets
   StudioPath: bank:/Song/Bank H.assets
-  lastModified: 638517391513530137
+  lastModified: 638517379905050568
   FileSizes:
   - Name: Desktop
     Value: 1478112

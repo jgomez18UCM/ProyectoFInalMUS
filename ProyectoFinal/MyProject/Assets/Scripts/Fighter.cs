@@ -1,6 +1,6 @@
 using UnityEngine.UI;
 using UnityEngine;
-
+using FMODUnity;
 namespace Combat
 {
     public class Fighter : MonoBehaviour
@@ -11,9 +11,8 @@ namespace Combat
         [SerializeField] Image vulnerableIcon;
         [SerializeField] Image strongIcon;
         [SerializeField] Image weakIcon;
-
-        [SerializeField] bool isEnemy; 
-
+        [SerializeField] bool isEnemy;
+        [SerializeField] StudioEventEmitter hitSound;
         EnemyAudio enemyAudio = null;
 
         Buff vulnerable;
@@ -55,7 +54,8 @@ namespace Combat
 
             currentHealth -= amount;
             UpdateHealthUI(currentHealth);
-
+            if (hitSound != null)
+                hitSound.Play();
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
@@ -71,6 +71,8 @@ namespace Combat
 
                gameObject.SetActive(false);
             }
+
+            
         }
 
         public void UpdateHealthUI(int newAmount)

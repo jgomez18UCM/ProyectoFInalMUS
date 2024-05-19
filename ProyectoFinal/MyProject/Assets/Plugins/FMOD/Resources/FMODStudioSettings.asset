@@ -558,11 +558,8 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - Bamboleo
+  - Master
   Banks:
-  - Accordion
-  - Accordion.assets
-  - Bamboleo.assets
   - Bank A
   - Bank A.assets
   - Bank B
@@ -579,18 +576,13 @@ MonoBehaviour:
   - Bank G.assets
   - Bank H
   - Bank H.assets
-  - Base
-  - Base.assets
-  - Clarinet
-  - Clarinet.assets
-  - Guitar
-  - Guitar.assets
-  - Jazz_Guitar
-  - Jazz_Guitar.assets
-  - Piano
-  - Piano.assets
-  - Soft_Sax
-  - Soft_Sax.assets
+  - Bank I
+  - Bank I.assets
+  - Bank J
+  - Bank J.assets
+  - Bank K
+  - Bank K.assets
+  - Master.assets
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
